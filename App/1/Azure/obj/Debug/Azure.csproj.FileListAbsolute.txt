@@ -1,0 +1,106 @@
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.AssemblyReference.cache
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.CoreCompileInputs.cache
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll.config
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.pdb
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Data.Common.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.IO.Compression.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Net.Http.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Net.Sockets.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Security.SecureString.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Core.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Buffers.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.Data.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Json.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.ValueTuple.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.pdb
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.pdb
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.pdb
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Core.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Buffers.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.Data.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Json.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.ValueTuple.xml
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.CopyComplete
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll
+C:\Users\ggovindaraj\OneDrive - Microsoft\Documents\Code\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.pdb
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll.config
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.pdb
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Data.Common.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Globalization.Extensions.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.IO.Compression.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Net.Http.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Net.Sockets.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Security.SecureString.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Overlapped.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Core.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Buffers.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.Data.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Numerics.Vectors.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Encodings.Web.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Json.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.ValueTuple.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.pdb
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.pdb
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Identity.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.pdb
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Security.KeyVault.Secrets.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Azure.Core.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Buffers.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Memory.Data.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Numerics.Vectors.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Encodings.Web.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Text.Json.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\bin\Debug\System.ValueTuple.xml
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.AssemblyReference.cache
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.CoreCompileInputs.cache
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Azure.csproj.CopyComplete
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.dll
+C:\Full Setup\AzureKeyVaultTest-master\AzureKeyVaultTest-master\Azure\obj\Debug\Microsoft.Configuration.ConfigurationBuilders.Azure.pdb

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory),MicrosoftConfigurationBuilders.sln))\tools\MicrosoftConfigurationBuilders.settings.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SkipCopyBuildProduct>true</SkipCopyBuildProduct>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EC5863F-7FF1-41C7-A384-8FFF81531E7A}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup Label="Nuget Project Build Order">
+    <NuGetProject Include="ConfigurationBuilders.Base.nupkg\Microsoft.Configuration.ConfigurationBuilders.Base.nuproj" />
+    <NuGetProject Include="ConfigurationBuilders.Environment.nupkg\Microsoft.Configuration.ConfigurationBuilders.Environment.nuproj" Condition="'$(SkipEnvironmentProj)' != 'true'" />
+    <NuGetProject Include="ConfigurationBuilders.UserSecrets.nupkg\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.nuproj" Condition="'$(SkipUserSecretsProj)' != 'true'" />
+    <NuGetProject Include="ConfigurationBuilders.KeyPerFile.nupkg\Microsoft.Configuration.ConfigurationBuilders.KeyPerFile.nuproj" Condition="'$(SkipKeyPerFileProj)' != 'true'" />
+    <NuGetProject Include="ConfigurationBuilders.Azure.nupkg\Microsoft.Configuration.ConfigurationBuilders.Azure.nuproj" Condition="'$(SkipAzureProj)' != 'true'" />
+    <NuGetProject Include="ConfigurationBuilders.Json.nupkg\Microsoft.Configuration.ConfigurationBuilders.Json.nuproj" Condition="'$(SkipJsonProj)' != 'true'" />
+    <NuGetProject Include="ConfigurationBuilders.AzureAppConfiguration.nupkg\Microsoft.Configuration.ConfigurationBuilders.AzureAppConfiguration.nuproj" Condition="'$(SkipAzureAppConfigProj)' != 'true'" />
+  </ItemGroup>
+  <ItemGroup Label="Base">
+    <None Include="ConfigurationBuilders.Base.nupkg\Microsoft.Configuration.ConfigurationBuilders.Base.nuspec" />
+    <None Include="ConfigurationBuilders.Base.nupkg\content\Net471\config.install.xdt" />
+    <None Include="ConfigurationBuilders.Base.nupkg\content\Net471\config.uninstall.xdt" />
+    <None Include="ConfigurationBuilders.Base.nupkg\shared\content\Net471\config.install.xdt" />
+    <None Include="ConfigurationBuilders.Base.nupkg\shared\content\Net471\config.uninstall.xdt" />
+    <None Include="ConfigurationBuilders.Base.nupkg\shared\tools\Net471\KeyValueConfigBuildersCommon.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="Environment">
+    <None Include="ConfigurationBuilders.Environment.nupkg\Microsoft.Configuration.ConfigurationBuilders.Environment.nuspec" />
+    <None Include="ConfigurationBuilders.Environment.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.Environment.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="UserSecrets">
+    <None Include="ConfigurationBuilders.UserSecrets.nupkg\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.nuspec" />
+    <None Include="ConfigurationBuilders.UserSecrets.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.UserSecrets.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="KeyPerFile">
+    <None Include="ConfigurationBuilders.KeyPerFile.nupkg\Microsoft.Configuration.ConfigurationBuilders.KeyPerFile.nuspec" />
+    <None Include="ConfigurationBuilders.KeyPerFile.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.KeyPerFile.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="Azure">
+    <None Include="ConfigurationBuilders.Azure.nupkg\Microsoft.Configuration.ConfigurationBuilders.Azure.nuspec" />
+    <None Include="ConfigurationBuilders.Azure.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.Azure.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="Json">
+    <None Include="ConfigurationBuilders.Json.nupkg\Microsoft.Configuration.ConfigurationBuilders.Json.nuspec" />
+    <None Include="ConfigurationBuilders.Json.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.Json.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <ItemGroup Label="AzureAppConfig">
+    <None Include="ConfigurationBuilders.AzureAppConfiguration.nupkg\Microsoft.Configuration.ConfigurationBuilders.AzureAppConfiguration.nuspec" />
+    <None Include="ConfigurationBuilders.AzureAppConfiguration.nupkg\tools\Net471\Install.ps1" />
+    <None Include="ConfigurationBuilders.AzureAppConfiguration.nupkg\tools\Net471\Uninstall.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build">
+    <MSBuild Projects="@(NuGetProject)" Targets="Build" />
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(NuGetProject)" Targets="Clean" />
+  </Target>
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
+</Project>

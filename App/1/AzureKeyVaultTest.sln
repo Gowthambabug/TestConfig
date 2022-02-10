@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureKeyVaultTest", "AzureKeyVaultTest\AzureKeyVaultTest.csproj", "{82A91051-6F6F-482D-828A-69A776E006CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure", "Azure\Azure.csproj", "{2C836547-8A4A-422F-A6F6-F3B2047627C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.Identity", "..\..\sdk\azure-sdk-for-net-main\sdk\identity\Azure.Identity\src\Azure.Identity.csproj", "{CAC393D1-0442-4679-8C6B-A8FDD79D6FFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.Security.KeyVault.Keys", "..\..\sdk\azure-sdk-for-net-main\sdk\keyvault\Azure.Security.KeyVault.Keys\src\Azure.Security.KeyVault.Keys.csproj", "{E5F915E5-B233-4319-B528-7211A1D3BC27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.Security.KeyVault.Secrets", "..\..\sdk\azure-sdk-for-net-main\sdk\keyvault\Azure.Security.KeyVault.Secrets\src\Azure.Security.KeyVault.Secrets.csproj", "{0FEFB4E3-5348-4574-9154-DDA55F43E23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "..\..\CB\MicrosoftConfigurationBuilders-main\src\Base\Base.csproj", "{F382FBF8-146D-4968-A199-90D37F9EF9A7}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\sdk\azure-sdk-for-net-main\sdk\keyvault\Azure.Security.KeyVault.Shared\src\Azure.Security.KeyVault.Shared.projitems*{0fefb4e3-5348-4574-9154-dda55f43e23d}*SharedItemsImports = 5
+		..\..\sdk\azure-sdk-for-net-main\sdk\keyvault\Azure.Security.KeyVault.Shared\src\Azure.Security.KeyVault.Shared.projitems*{e5f915e5-b233-4319-b528-7211a1d3bc27}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82A91051-6F6F-482D-828A-69A776E006CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A91051-6F6F-482D-828A-69A776E006CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A91051-6F6F-482D-828A-69A776E006CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A91051-6F6F-482D-828A-69A776E006CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C836547-8A4A-422F-A6F6-F3B2047627C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C836547-8A4A-422F-A6F6-F3B2047627C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C836547-8A4A-422F-A6F6-F3B2047627C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C836547-8A4A-422F-A6F6-F3B2047627C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC393D1-0442-4679-8C6B-A8FDD79D6FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC393D1-0442-4679-8C6B-A8FDD79D6FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC393D1-0442-4679-8C6B-A8FDD79D6FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC393D1-0442-4679-8C6B-A8FDD79D6FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F915E5-B233-4319-B528-7211A1D3BC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F915E5-B233-4319-B528-7211A1D3BC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F915E5-B233-4319-B528-7211A1D3BC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F915E5-B233-4319-B528-7211A1D3BC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEFB4E3-5348-4574-9154-DDA55F43E23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEFB4E3-5348-4574-9154-DDA55F43E23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEFB4E3-5348-4574-9154-DDA55F43E23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEFB4E3-5348-4574-9154-DDA55F43E23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F382FBF8-146D-4968-A199-90D37F9EF9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F382FBF8-146D-4968-A199-90D37F9EF9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F382FBF8-146D-4968-A199-90D37F9EF9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F382FBF8-146D-4968-A199-90D37F9EF9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24612679-0EC8-4F02-8FE7-31620182947B}
+	EndGlobalSection
+EndGlobal

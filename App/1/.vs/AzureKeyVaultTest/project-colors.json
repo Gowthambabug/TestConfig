@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "82a91051-6f6f-482d-828a-69a776e006cd": {
+      "ProjectGuid": "82a91051-6f6f-482d-828a-69a776e006cd",
+      "DisplayName": "AzureKeyVaultTest",
+      "ColorIndex": 0
+    },
+    "f382fbf8-146d-4968-a199-90d37f9ef9a7": {
+      "ProjectGuid": "f382fbf8-146d-4968-a199-90d37f9ef9a7",
+      "DisplayName": "Base",
+      "ColorIndex": 1
+    },
+    "189b715b-09ef-49e9-a929-5e68b4e06ce0": {
+      "ProjectGuid": "189b715b-09ef-49e9-a929-5e68b4e06ce0",
+      "DisplayName": "Azure.Security.KeyVault.Secrets",
+      "ColorIndex": 2
+    },
+    "2c836547-8a4a-422f-a6f6-f3b2047627c4": {
+      "ProjectGuid": "2c836547-8a4a-422f-a6f6-f3b2047627c4",
+      "DisplayName": "Azure",
+      "ColorIndex": 3
+    },
+    "d7637593-3845-4892-ad92-13aa4e70eaf5": {
+      "ProjectGuid": "d7637593-3845-4892-ad92-13aa4e70eaf5",
+      "DisplayName": "Azure.Identity",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

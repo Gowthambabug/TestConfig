@@ -1,0 +1,188 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <CustomAfterMicrosoftCommonTargets>$(MSBuildThisFileDirectory)version.targets;$(MSBuildThisFileDirectory)signing.targets</CustomAfterMicrosoftCommonTargets>
+    <CustomAfterNuGetProjTargets>$(MSBuildThisFileDirectory)signing.targets</CustomAfterNuGetProjTargets>
+    <RepositoryRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'MicrosoftConfigurationBuilders.sln'))\</RepositoryRoot>
+    <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'MicrosoftConfigurationBuilders.sln'))\</SolutionDir>
+  </PropertyGroup>
+
+  <Import Project="$(RepositoryRoot)\packages\microbuild.core.0.3.0\build\MicroBuild.Core.props"
+      Condition="Exists('$(RepositoryRoot)\packages\microbuild.core.0.3.0\build\MicroBuild.Core.props')" />
+  <Import Project="$(RepositoryRoot)\packages\microbuild.core.0.3.0\build\MicroBuild.Core.targets"
+      Condition="Exists('$(RepositoryRoot)\packages\microbuild.core.0.3.0\build\MicroBuild.Core.targets')" />
+
+  <!-- Configurable properties-->
+
+  <PropertyGroup>
+    <!-- Versioning:
+            Major:	'Major' for Assembly, File, Info, and Package.
+            Minor:	'Minor' for Assembly, File, Info, and Package.
+            Build:	Third (auto-generated) for File and Info. (Assembly is always 0)
+            Revision:	'Revision' for Assembly and File. Strategy - Try to leave this 0 and only rev Major/Minor for big changes and Release for non-dependency-breaking changes.
+            Release:	Third for Info and Package.
+         Update package and file without touching assembly, except for major releases.
+    -->
+    <BuildQuality Condition="'$(BuildQuality)' == ''">preview</BuildQuality>
+    <VersionStartYear>2022</VersionStartYear>
+    <VersionMajor>2</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <VersionRevision>0</VersionRevision>
+    <VersionRelease>0</VersionRelease>
+    <VersionBuild Condition="'$(VersionBuild)' == '' OR '$(VersionBuild)' == '0'">$([MSBuild]::Add(1, $([MSBuild]::Subtract($([System.DateTime]::Now.Year), $(VersionStartYear)))))$([System.DateTime]::Now.ToString("MMdd"))</VersionBuild>
+    <NuGetPackageVersion>$(VersionMajor).$(VersionMinor).$(VersionRelease)</NuGetPackageVersion>
+    <NuGetPackageBaseDependencyVersion>$(VersionMajor).$(VersionMinor).$(VersionRelease)</NuGetPackageBaseDependencyVersion>
+  </PropertyGroup>
+
+  <!-- Azure App Config is versioned 1 behind everyone else. -->
+  <PropertyGroup Label="Azure App Config adjustments" Condition="$(MSBuildProjectName.Contains('AzureAppConfig'))">
+    <VersionMajor>$([MSBuild]::Subtract($(VersionMajor), 1))</VersionMajor>
+    <NuGetPackageVersion>$(VersionMajor).$(VersionMinor).$(VersionRelease)</NuGetPackageVersion>
+    <!-- Leave <NuGetPackageBaseDependencyVersion> untouched. -->
+  </PropertyGroup>
+
+  <!-- Add release type for non-RTM releases. -->
+  <PropertyGroup Label="Prerelease version adjustments" Condition="'$(BuildQuality)' != 'rtm'">
+    <VersionRelease>$(VersionRelease)-$(BuildQuality)</VersionRelease>
+    <NuGetPackageVersion>$(NuGetPackageVersion)-$(BuildQuality)</NuGetPackageVersion>
+    <NuGetPackageBaseDependencyVersion>$(NuGetPackageBaseDependencyVersion)-$(BuildQuality)</NuGetPackageBaseDependencyVersion>
+  </PropertyGroup>
+
+  <!-- Additionaly, add date stamp to 'preview' releases. -->
+  <PropertyGroup Label="Prerelease version adjustments" Condition="'$(BuildQuality)' == 'preview'">
+    <NuGetPackageVersion>$(NuGetPackageVersion)$(VersionBuild)</NuGetPackageVersion>
+    <NuGetPackageBaseDependencyVersion>$(NuGetPackageBaseDependencyVersion)$(VersionBuild)</NuGetPackageBaseDependencyVersion>
+  </PropertyGroup>
+
+  <!-- Default properties -->
+
+  <PropertyGroup Label="Common Configuration">
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <OutputPath>$(RepositoryRoot).binaries\bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputRoot>$(RepositoryRoot).binaries\obj\$(Configuration)\</IntermediateOutputRoot>
+    <IntermediateOutputPath>$(IntermediateOutputRoot)$(MSBuildProjectName)\</IntermediateOutputPath>
+    <AssemblyPath Condition="'$(CodeSignEnabled)' == 'true'">$(CodeSignOutputPath)</AssemblyPath>
+    <AssemblyPath Condition="'$(AssemblyPath)' == ''">$(OutputPath)</AssemblyPath>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget Configuration">
+    <NuGetOutputPath>$(RepositoryRoot).binaries\Packages\$(Configuration)</NuGetOutputPath>
+    <NuGetPackSymbols Condition="'$(NuGetPackSymbols)' == ''">true</NuGetPackSymbols>
+    <SourceRootFullPath>$(RepositoryRoot)\src\$(MSBuildProjectName)\</SourceRootFullPath>
+    <NuGetScriptDirectory>$(MSBuildProjectDirectory)\tools\Net471</NuGetScriptDirectory>
+    <NuGetSharedScriptDirectory>$(MSBuildProjectDirectory)\shared\tools\Net471</NuGetSharedScriptDirectory>
+    <NuGetProcessedScriptSubDirectory>pp</NuGetProcessedScriptSubDirectory>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.nuproj'">
+    <NuGetScriptFiles Include="$(NuGetScriptDirectory)\*.ps1" />
+    <NuGetSharedScriptFiles Include="$(NuGetSharedScriptDirectory)\*.ps1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TestRoot>$(RepositoryRoot)\test\Microsoft.Configuration.ConfigurationBuilders.Test</TestRoot>
+    <BuildingTestProject Condition="$(MSBuildProjectDirectory.ToLower().Contains($(TestRoot.ToLower())))">true</BuildingTestProject>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)version.targets" Condition="'$(MSBuildProjectExtension)' == '.nuproj'" />
+
+  <Target Name="PreventReferenceCopy" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <TempReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths)" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('%(ReferenceCopyLocalPaths.Identity)', '.*Microsoft\.Azure\.AppConfiguration\..+\.dll'))" />
+      <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" />
+      <ReferenceCopyLocalPaths Include="@(TempReferenceCopyLocalPaths)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="SetNuSpecProperties" BeforeTargets="GenerateNuSpecFile">
+    <PropertyGroup>
+      <NuSpecProperties>
+          NuGetPackageBaseDependencyVersion=$(NuGetPackageBaseDependencyVersion);
+          NuGetPackageVersion=$(NuGetPackageVersion);
+          NuGetPackageId=$(NuGetPackageId);
+      </NuSpecProperties>
+    </PropertyGroup>
+  </Target>
+
+  <Target Name="PreprocessNugetScripts" BeforeTargets="GetNuGetContentFromProject"> <!-- AfterTargets="GenerateNuSpecFile"> -->
+    <ItemGroup>
+      <PropertiesToReplace Include="typeName">
+        <Value>$(BuilderType)</Value>
+      </PropertiesToReplace>
+      <PropertiesToReplace Include="assemblyName">
+        <Value>$(AssemblyName)</Value>
+      </PropertiesToReplace>
+      <PropertiesToReplace Include="assemblyVersion">
+        <Value>$(AssemblyVersion)</Value>
+      </PropertiesToReplace>
+      <PropertiesToReplace Include="packageVersion">
+        <Value>$(NuGetPackageVersion)</Value>
+      </PropertiesToReplace>
+      <PropertiesToReplace Include="dependencyVersion">
+        <Value>$(NuGetPackageBaseDependencyVersion)</Value>
+      </PropertiesToReplace>
+    </ItemGroup>
+
+    <PreprocessFiles Files="@(NuGetScriptFiles)" OutputDir="$(NuGetScriptDirectory)\$(NuGetProcessedScriptSubDirectory)" PropertyCollection="@(PropertiesToReplace)" />
+    <PreprocessFiles Files="@(NuGetSharedScriptFiles)" OutputDir="$(NuGetSharedScriptDirectory)\$(NuGetProcessedScriptSubDirectory)" PropertyCollection="@(PropertiesToReplace)" />
+  </Target>
+
+  <Target Name="SuperClean" AfterTargets="Clean"  Condition="'$(MSBuildProjectExtension)' != '.nuproj'">
+    <RemoveDir Directories="$(OutputPath)" />
+    <RemoveDir Directories="$(IntermediateOutputRoot)" />
+  </Target>
+
+  <Target Name="SuperCleanPackage" AfterTargets="Clean" Condition="'$(MSBuildProjectExtension)' == '.nuproj'">
+    <RemoveDir Directories="$(NuGetOutputPath)" />
+    <RemoveDir Directories="$(NuGetSymbolsOutputPath)" />
+    <RemoveDir Directories="$(NuGetScriptDirectory)\$(NuGetProcessedScriptSubDirectory)" />
+    <RemoveDir Directories="$(NuGetSharedScriptDirectory)\$(NuGetProcessedScriptSubDirectory)" />
+  </Target>
+
+
+
+
+<!--
+ ==================================================================================================
+  Supporting function to inject project properties into NuGet content before packing.
+ ==================================================================================================
+-->
+  <UsingTask TaskName="PreprocessFiles" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup>
+      <Files Required="true" ParameterType="Microsoft.Build.Framework.ITaskItem[]" />
+      <OutputDir Required="true" ParameterType="System.String" />
+      <PropertyCollection Required="true" ParameterType="Microsoft.Build.Framework.ITaskItem[]" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System.Text.RegularExpressions" />
+      <Using Namespace="System.IO" />
+      <Using Namespace="System.Collections.Concurrent"  />
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+            string line;
+            string tokenPattern = @"\$" + @"(\w+)\$"; // Split up to avoid msbuild property substitution
+            ConcurrentDictionary<string, string> properties = new ConcurrentDictionary<string, string>(StringComparer.OrdinalIgnoreCase); // Nuget .pp transforms are case insensitive
+            foreach (var p in PropertyCollection) { properties.TryAdd(p.GetMetadata("Identity"), p.GetMetadata("Value")); }
+            foreach (var inFile in Files) {
+                string filename = inFile.ItemSpec;
+                if (!File.Exists(filename)) { Log.LogError("File to preprocess does not exist: {0}", filename); return false; }
+                if (!Directory.Exists(OutputDir)) { Directory.CreateDirectory(OutputDir); }
+                using (StreamReader sr = new StreamReader(filename))
+                using (StreamWriter sw = new StreamWriter(Path.Combine(OutputDir, Path.GetFileName(filename)), false))
+                {
+                    while ((line = sr.ReadLine()) != null) {
+                        line = Regex.Replace(line, tokenPattern, (m) => {
+                            string key = m.Groups[1].Value;
+                            if (properties.ContainsKey(key)) { return properties[key]; }
+                            return m.Groups[0].Value;
+                        });
+                        sw.WriteLine(line);
+                    }
+                }
+            }
+    ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+</Project>

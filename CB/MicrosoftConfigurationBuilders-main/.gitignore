@@ -1,0 +1,15 @@
+[Bb]in/
+[Oo]bj/
+src/**/[Bb]in/
+src/**/[Oo]bj/
+src/packages/**/signed/
+src/packages/**/pp/
+test/**/[Bb]in/
+test/**/[Oo]bj/
+.vs/
+.binaries/
+msbuild.*
+/packages/
+samples/SampleWebApp/bin/
+samples/SampleWebApp/obj/
+*.user

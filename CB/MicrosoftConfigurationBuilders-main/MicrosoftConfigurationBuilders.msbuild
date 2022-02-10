@@ -1,0 +1,74 @@
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <AssemblyProject Include="src\Base\Base.csproj" />
+    <AssemblyProject Include="src\Environment\Environment.csproj" Condition="'$(SkipEnvironmentProj)' != 'true'" />
+    <AssemblyProject Include="src\UserSecrets\UserSecrets.csproj" Condition="'$(SkipUserSecretsProj)' != 'true'" />
+    <AssemblyProject Include="src\KeyPerFile\KeyPerFile.csproj" Condition="'$(SkipKeyPerFileProj)' != 'true'" />
+    <AssemblyProject Include="src\Azure\Azure.csproj" Condition="'$(SkipAzureProj)' != 'true'" />
+    <AssemblyProject Include="src\Json\Json.csproj" Condition="'$(SkipJsonProj)' != 'true'" />
+    <AssemblyProject Include="src\AzureAppConfig\AzureAppConfig.csproj" Condition="'$(SkipAzureAppConfigProj)' != 'true'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TestProject Include="test\Microsoft.Configuration.ConfigurationBuilders.Test\Test.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SampleProject Include="samples\SampleWebApp\SampleWebApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageProject Include="src\Packages\Packages.csproj" />
+  </ItemGroup>
+  
+  <Target Name="Build" DependsOnTargets="BuildAssemblies;UnitTest;BuildPackages" />
+  <Target Name="BuildAll" DependsOnTargets="BuildAssemblies;BuildSamples;UnitTest;BuildPackages" />
+  <Target Name="Clean" DependsOnTargets="CleanPackages;CleanSamples;CleanTests;CleanAssemblies" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build" />
+  
+  <Target Name="BuildAssemblies" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="Build" Projects="@(AssemblyProject)" />
+  </Target>
+
+  <Target Name="BuildTests" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="Build" Projects="@(TestProject)" />
+  </Target>
+
+  <Target Name="BuildSamples" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="Build" Projects="@(SampleProject)" />
+  </Target>
+
+  <Target Name="CleanAssemblies">
+    <MSBuild Targets="Clean" Projects="@(AssemblyProject)" />
+  </Target>
+
+  <Target Name="CleanTests">
+    <MSBuild Targets="Clean" Projects="@(TestProject)" />
+  </Target>
+
+  <Target Name="CleanSamples">
+    <MSBuild Targets="Clean" Projects="@(SampleProject)" />
+  </Target>
+
+  <!-- Packages build -->
+
+  <Target Name="BuildPackages" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="" Projects="@(PackageProject)" />
+  </Target>
+
+  <Target Name="CleanPackages">
+    <MSBuild Targets="Clean" Projects="@(PackageProject)" />
+  </Target>
+
+  <Target Name="RebuildPackages" DependsOnTargets="CleanPackages;BuildPackages" />
+
+  <Target Name="RestorePackages" Condition="'$(SkipPackageRestore)' != 'true'">
+    <Exec Command=".nuget\NuGet.exe restore" />
+  </Target>
+
+  <Target Name="UnitTest" DependsOnTargets="BuildTests">
+    <MSBuild Targets="XunitTest" Projects="@(TestProject)" />
+  </Target>
+
+</Project>

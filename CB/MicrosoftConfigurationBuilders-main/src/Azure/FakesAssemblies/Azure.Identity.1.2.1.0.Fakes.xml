@@ -1,0 +1,2072 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Azure.Identity.1.2.1.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Azure.Identity.Fakes.ShimAuthenticationFailedException">
+            <summary>Shim type of Azure.Identity.AuthenticationFailedException</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthenticationFailedException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthenticationFailedException.#ctor(Azure.Identity.AuthenticationFailedException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAuthenticationFailedException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthenticationFailedException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthenticationFailedException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthenticationFailedException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthenticationFailedException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthenticationFailedException.ConstructorString">
+            <summary>Sets the Shim of AuthenticationFailedException.AuthenticationFailedException(String message)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthenticationFailedException.ConstructorStringException">
+            <summary>Sets the Shim of AuthenticationFailedException.AuthenticationFailedException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthenticationFailedException.CreateAggregateExceptionStringIListOfException">
+            <summary>Sets the Shim of AuthenticationFailedException.CreateAggregateException(String message, IList`1&lt;Exception&gt; innerExceptions)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAuthorizationCodeCredential">
+            <summary>Shim type of Azure.Identity.AuthorizationCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.#ctor(Azure.Identity.AuthorizationCodeCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.Constructor">
+            <summary>Sets the Shim of AuthorizationCodeCredential.AuthorizationCodeCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.ConstructorStringStringStringString">
+            <summary>Sets the Shim of AuthorizationCodeCredential.AuthorizationCodeCredential(String tenantId, String clientId, String clientSecret, String authorizationCode)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.ConstructorStringStringStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of AuthorizationCodeCredential.AuthorizationCodeCredential(String tenantId, String clientId, String clientSecret, String authorizationCode, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAuthorizationCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AuthorizationCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAzureAuthorityHosts">
+            <summary>Shim type of Azure.Identity.AzureAuthorityHosts</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureAuthorityHosts.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.AzureChinaGet">
+            <summary>Sets the Shim of AzureAuthorityHosts.get_AzureChina()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.AzureGermanyGet">
+            <summary>Sets the Shim of AzureAuthorityHosts.get_AzureGermany()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.AzureGovernmentGet">
+            <summary>Sets the Shim of AzureAuthorityHosts.get_AzureGovernment()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.AzurePublicCloudGet">
+            <summary>Sets the Shim of AzureAuthorityHosts.get_AzurePublicCloud()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureAuthorityHosts.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureAuthorityHosts.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.GetDefault">
+            <summary>Sets the Shim of AzureAuthorityHosts.GetDefault()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.GetDefaultScopeUri">
+            <summary>Sets the Shim of AzureAuthorityHosts.GetDefaultScope(Uri authorityHost)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.GetDeviceCodeRedirectUriUri">
+            <summary>Sets the Shim of AzureAuthorityHosts.GetDeviceCodeRedirectUri(Uri authorityHost)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureAuthorityHosts.StaticConstructor">
+            <summary>Sets the Shim of AzureAuthorityHosts.AzureAuthorityHosts()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAzureCliCredential">
+            <summary>Shim type of Azure.Identity.AzureCliCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureCliCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureCliCredential.#ctor(Azure.Identity.AzureCliCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances.GetAzureCliProcessStartInfoStringString">
+            <summary>Sets the Shim of AzureCliCredential.GetAzureCliProcessStartInfo(String fileName, String argument)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.AllInstances.RequestCliAccessTokenAsyncBooleanStringArrayCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.RequestCliAccessTokenAsync(Boolean async, String[] scopes, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureCliCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimAzureCliCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.Constructor">
+            <summary>Sets the Shim of AzureCliCredential.AzureCliCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.DeserializeOutputString">
+            <summary>Sets the Shim of AzureCliCredential.DeserializeOutput(String output)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.GetAzureCliProcessStartInfoStringString">
+            <summary>Sets the Shim of AzureCliCredential.GetAzureCliProcessStartInfo(String fileName, String argument)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.GetFileNameAndArgumentsStringStringOutStringOut">
+            <summary>Sets the Shim of AzureCliCredential.GetFileNameAndArguments(String resource, String&amp; fileName, String&amp; argument)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.RequestCliAccessTokenAsyncBooleanStringArrayCancellationToken">
+            <summary>Sets the Shim of AzureCliCredential.RequestCliAccessTokenAsync(Boolean async, String[] scopes, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimAzureCliCredential.StaticConstructor">
+            <summary>Sets the Shim of AzureCliCredential.AzureCliCredential()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimChainedTokenCredential">
+            <summary>Shim type of Azure.Identity.ChainedTokenCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimChainedTokenCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimChainedTokenCredential.#ctor(Azure.Identity.ChainedTokenCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimChainedTokenCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ChainedTokenCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ChainedTokenCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimChainedTokenCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimChainedTokenCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.ConstructorTokenCredentialArray">
+            <summary>Sets the Shim of ChainedTokenCredential.ChainedTokenCredential(TokenCredential[] sources)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ChainedTokenCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimChainedTokenCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ChainedTokenCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimClientCertificateCredential">
+            <summary>Shim type of Azure.Identity.ClientCertificateCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientCertificateCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientCertificateCredential.#ctor(Azure.Identity.ClientCertificateCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimClientCertificateCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.AllInstances.ClientIdGet">
+            <summary>Sets the Shim of ClientCertificateCredential.get_ClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientCertificateCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientCertificateCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.AllInstances.TenantIdGet">
+            <summary>Sets the Shim of ClientCertificateCredential.get_TenantId()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientCertificateCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientCertificateCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.ClientIdGet">
+            <summary>Sets the Shim of ClientCertificateCredential.get_ClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.Constructor">
+            <summary>Sets the Shim of ClientCertificateCredential.ClientCertificateCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.ConstructorStringStringString">
+            <summary>Sets the Shim of ClientCertificateCredential.ClientCertificateCredential(String tenantId, String clientId, String clientCertificatePath)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.ConstructorStringStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of ClientCertificateCredential.ClientCertificateCredential(String tenantId, String clientId, String clientCertificatePath, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.ConstructorStringStringX509Certificate2">
+            <summary>Sets the Shim of ClientCertificateCredential.ClientCertificateCredential(String tenantId, String clientId, X509Certificate2 clientCertificate)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.ConstructorStringStringX509Certificate2TokenCredentialOptions">
+            <summary>Sets the Shim of ClientCertificateCredential.ClientCertificateCredential(String tenantId, String clientId, X509Certificate2 clientCertificate, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientCertificateCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientCertificateCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientCertificateCredential.TenantIdGet">
+            <summary>Sets the Shim of ClientCertificateCredential.get_TenantId()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimClientSecretCredential">
+            <summary>Shim type of Azure.Identity.ClientSecretCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientSecretCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientSecretCredential.#ctor(Azure.Identity.ClientSecretCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances.ClientIdGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_ClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances.ClientSecretGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_ClientSecret()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientSecretCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientSecretCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.AllInstances.TenantIdGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_TenantId()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientSecretCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimClientSecretCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.ClientIdGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_ClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.ClientSecretGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_ClientSecret()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.Constructor">
+            <summary>Sets the Shim of ClientSecretCredential.ClientSecretCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.ConstructorStringStringString">
+            <summary>Sets the Shim of ClientSecretCredential.ClientSecretCredential(String tenantId, String clientId, String clientSecret)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.ConstructorStringStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of ClientSecretCredential.ClientSecretCredential(String tenantId, String clientId, String clientSecret, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientSecretCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ClientSecretCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimClientSecretCredential.TenantIdGet">
+            <summary>Sets the Shim of ClientSecretCredential.get_TenantId()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimCredentialUnavailableException">
+            <summary>Shim type of Azure.Identity.CredentialUnavailableException</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimCredentialUnavailableException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimCredentialUnavailableException.#ctor(Azure.Identity.CredentialUnavailableException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimCredentialUnavailableException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimCredentialUnavailableException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimCredentialUnavailableException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimCredentialUnavailableException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimCredentialUnavailableException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimCredentialUnavailableException.ConstructorString">
+            <summary>Sets the Shim of CredentialUnavailableException.CredentialUnavailableException(String message)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimCredentialUnavailableException.ConstructorStringException">
+            <summary>Sets the Shim of CredentialUnavailableException.CredentialUnavailableException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDefaultAzureCredential">
+            <summary>Shim type of Azure.Identity.DefaultAzureCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredential.#ctor(Azure.Identity.DefaultAzureCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDefaultAzureCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.Constructor">
+            <summary>Sets the Shim of DefaultAzureCredential.DefaultAzureCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.ConstructorBoolean">
+            <summary>Sets the Shim of DefaultAzureCredential.DefaultAzureCredential(Boolean includeInteractiveCredentials)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.ConstructorDefaultAzureCredentialOptions">
+            <summary>Sets the Shim of DefaultAzureCredential.DefaultAzureCredential(DefaultAzureCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.GetTokenFromCredentialAsyncTokenCredentialTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenFromCredentialAsync(TokenCredential credential, TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.GetTokenFromSourcesAsyncTokenCredentialArrayTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenFromSourcesAsync(TokenCredential[] sources, TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DefaultAzureCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredential.StaticConstructor">
+            <summary>Sets the Shim of DefaultAzureCredential.DefaultAzureCredential()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions">
+            <summary>Shim type of Azure.Identity.DefaultAzureCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.#ctor(Azure.Identity.DefaultAzureCredentialOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeAzureCliCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeAzureCliCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeAzureCliCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeAzureCliCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeEnvironmentCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeEnvironmentCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeEnvironmentCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeEnvironmentCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeInteractiveBrowserCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeInteractiveBrowserCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeInteractiveBrowserCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeInteractiveBrowserCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeManagedIdentityCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeManagedIdentityCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeManagedIdentityCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeManagedIdentityCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeSharedTokenCacheCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeSharedTokenCacheCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeSharedTokenCacheCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeSharedTokenCacheCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeVisualStudioCodeCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeVisualStudioCodeCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeVisualStudioCodeCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeVisualStudioCodeCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeVisualStudioCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeVisualStudioCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ExcludeVisualStudioCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeVisualStudioCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.InteractiveBrowserTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_InteractiveBrowserTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.InteractiveBrowserTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_InteractiveBrowserTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ManagedIdentityClientIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ManagedIdentityClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.ManagedIdentityClientIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ManagedIdentityClientId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.SharedTokenCacheTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_SharedTokenCacheTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.SharedTokenCacheTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_SharedTokenCacheTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.SharedTokenCacheUsernameGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_SharedTokenCacheUsername()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.SharedTokenCacheUsernameSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_SharedTokenCacheUsername(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.VisualStudioCodeTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_VisualStudioCodeTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.VisualStudioCodeTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_VisualStudioCodeTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.VisualStudioTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_VisualStudioTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.AllInstances.VisualStudioTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_VisualStudioTenantId(String value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.Constructor">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.DefaultAzureCredentialOptions()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeAzureCliCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeAzureCliCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeAzureCliCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeAzureCliCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeEnvironmentCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeEnvironmentCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeEnvironmentCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeEnvironmentCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeInteractiveBrowserCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeInteractiveBrowserCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeInteractiveBrowserCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeInteractiveBrowserCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeManagedIdentityCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeManagedIdentityCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeManagedIdentityCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeManagedIdentityCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeSharedTokenCacheCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeSharedTokenCacheCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeSharedTokenCacheCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeSharedTokenCacheCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeVisualStudioCodeCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeVisualStudioCodeCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeVisualStudioCodeCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeVisualStudioCodeCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeVisualStudioCredentialGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ExcludeVisualStudioCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ExcludeVisualStudioCredentialSetBoolean">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ExcludeVisualStudioCredential(Boolean value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.InteractiveBrowserTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_InteractiveBrowserTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.InteractiveBrowserTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_InteractiveBrowserTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ManagedIdentityClientIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_ManagedIdentityClientId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.ManagedIdentityClientIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_ManagedIdentityClientId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.SharedTokenCacheTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_SharedTokenCacheTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.SharedTokenCacheTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_SharedTokenCacheTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.SharedTokenCacheUsernameGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_SharedTokenCacheUsername()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.SharedTokenCacheUsernameSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_SharedTokenCacheUsername(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.VisualStudioCodeTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_VisualStudioCodeTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.VisualStudioCodeTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_VisualStudioCodeTenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.VisualStudioTenantIdGet">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.get_VisualStudioTenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDefaultAzureCredentialOptions.VisualStudioTenantIdSetString">
+            <summary>Sets the Shim of DefaultAzureCredentialOptions.set_VisualStudioTenantId(String value)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDeviceCodeCredential">
+            <summary>Shim type of Azure.Identity.DeviceCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeCredential.#ctor(Azure.Identity.DeviceCodeCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances.DeviceCodeCallbackDeviceCodeResultCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.DeviceCodeCallback(DeviceCodeResult deviceCode, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.AllInstances.GetTokenViaDeviceCodeAsyncStringArrayBooleanCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenViaDeviceCodeAsync(String[] scopes, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.Constructor">
+            <summary>Sets the Shim of DeviceCodeCredential.DeviceCodeCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.ConstructorFuncOfDeviceCodeInfoCancellationTokenTaskStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of DeviceCodeCredential.DeviceCodeCredential(Func`3&lt;DeviceCodeInfo,CancellationToken,Task&gt; deviceCodeCallback, String tenantId, String clientId, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.ConstructorFuncOfDeviceCodeInfoCancellationTokenTaskStringTokenCredentialOptions">
+            <summary>Sets the Shim of DeviceCodeCredential.DeviceCodeCredential(Func`3&lt;DeviceCodeInfo,CancellationToken,Task&gt; deviceCodeCallback, String clientId, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.DeviceCodeCallbackDeviceCodeResultCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.DeviceCodeCallback(DeviceCodeResult deviceCode, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeCredential.GetTokenViaDeviceCodeAsyncStringArrayBooleanCancellationToken">
+            <summary>Sets the Shim of DeviceCodeCredential.GetTokenViaDeviceCodeAsync(String[] scopes, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDeviceCodeInfo">
+            <summary>Shim type of Azure.Identity.DeviceCodeInfo</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimDeviceCodeInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimDeviceCodeInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimDeviceCodeInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimEnvironmentCredential">
+            <summary>Shim type of Azure.Identity.EnvironmentCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimEnvironmentCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimEnvironmentCredential.#ctor(Azure.Identity.EnvironmentCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimEnvironmentCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.AllInstances.CredentialGet">
+            <summary>Sets the Shim of EnvironmentCredential.get_Credential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimEnvironmentCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimEnvironmentCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.Constructor">
+            <summary>Sets the Shim of EnvironmentCredential.EnvironmentCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.ConstructorTokenCredentialOptions">
+            <summary>Sets the Shim of EnvironmentCredential.EnvironmentCredential(TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.CredentialGet">
+            <summary>Sets the Shim of EnvironmentCredential.get_Credential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimEnvironmentCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of EnvironmentCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimInteractiveBrowserCredential">
+            <summary>Shim type of Azure.Identity.InteractiveBrowserCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.#ctor(Azure.Identity.InteractiveBrowserCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.AllInstances.GetTokenViaBrowserLoginAsyncStringArrayBooleanCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenViaBrowserLoginAsync(String[] scopes, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.Constructor">
+            <summary>Sets the Shim of InteractiveBrowserCredential.InteractiveBrowserCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.ConstructorString">
+            <summary>Sets the Shim of InteractiveBrowserCredential.InteractiveBrowserCredential(String clientId)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.ConstructorStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of InteractiveBrowserCredential.InteractiveBrowserCredential(String tenantId, String clientId, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimInteractiveBrowserCredential.GetTokenViaBrowserLoginAsyncStringArrayBooleanCancellationToken">
+            <summary>Sets the Shim of InteractiveBrowserCredential.GetTokenViaBrowserLoginAsync(String[] scopes, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimManagedIdentityCredential">
+            <summary>Shim type of Azure.Identity.ManagedIdentityCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimManagedIdentityCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimManagedIdentityCredential.#ctor(Azure.Identity.ManagedIdentityCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimManagedIdentityCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimManagedIdentityCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimManagedIdentityCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.Constructor">
+            <summary>Sets the Shim of ManagedIdentityCredential.ManagedIdentityCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.ConstructorStringTokenCredentialOptions">
+            <summary>Sets the Shim of ManagedIdentityCredential.ManagedIdentityCredential(String clientId, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimManagedIdentityCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of ManagedIdentityCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimSharedTokenCacheCredential">
+            <summary>Shim type of Azure.Identity.SharedTokenCacheCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.#ctor(Azure.Identity.SharedTokenCacheCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances.GetAccountAsync">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetAccountAsync()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances.GetCredentialUnavailableMessageListOfIAccountListOfIAccount">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetCredentialUnavailableMessage(List`1&lt;IAccount&gt; accounts, List`1&lt;IAccount&gt; filteredAccounts)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.AllInstances._GetAccountAsyncb__19_0IAccount">
+            <summary>Sets the Shim of SharedTokenCacheCredential.&lt;GetAccountAsync&gt;b__19_0(IAccount a)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.Constructor">
+            <summary>Sets the Shim of SharedTokenCacheCredential.SharedTokenCacheCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.ConstructorSharedTokenCacheCredentialOptions">
+            <summary>Sets the Shim of SharedTokenCacheCredential.SharedTokenCacheCredential(SharedTokenCacheCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.ConstructorStringTokenCredentialOptions">
+            <summary>Sets the Shim of SharedTokenCacheCredential.SharedTokenCacheCredential(String username, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.GetAccountAsync">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetAccountAsync()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.GetCredentialUnavailableMessageListOfIAccountListOfIAccount">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetCredentialUnavailableMessage(List`1&lt;IAccount&gt; accounts, List`1&lt;IAccount&gt; filteredAccounts)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of SharedTokenCacheCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential.StaticConstructor">
+            <summary>Sets the Shim of SharedTokenCacheCredential.SharedTokenCacheCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredential._GetAccountAsyncb__19_0IAccount">
+            <summary>Sets the Shim of SharedTokenCacheCredential.&lt;GetAccountAsync&gt;b__19_0(IAccount a)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions">
+            <summary>Shim type of Azure.Identity.SharedTokenCacheCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.#ctor(Azure.Identity.SharedTokenCacheCredentialOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.AllowUnencryptedCacheAzureIdentityITokenCacheOptionsget">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.Azure.Identity.ITokenCacheOptions.get_AllowUnencryptedCache()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.EnablePersistentCacheAzureIdentityITokenCacheOptionsget">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.Azure.Identity.ITokenCacheOptions.get_EnablePersistentCache()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.TenantIdGet">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.TenantIdSetString">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.UsernameGet">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.get_Username()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllInstances.UsernameSetString">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.set_Username(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.AllowUnencryptedCacheAzureIdentityITokenCacheOptionsget">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.Azure.Identity.ITokenCacheOptions.get_AllowUnencryptedCache()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.Constructor">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.SharedTokenCacheCredentialOptions()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.EnablePersistentCacheAzureIdentityITokenCacheOptionsget">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.Azure.Identity.ITokenCacheOptions.get_EnablePersistentCache()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.TenantIdGet">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.TenantIdSetString">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.UsernameGet">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.get_Username()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimSharedTokenCacheCredentialOptions.UsernameSetString">
+            <summary>Sets the Shim of SharedTokenCacheCredentialOptions.set_Username(String value)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimTokenCredentialOptions">
+            <summary>Shim type of Azure.Identity.TokenCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimTokenCredentialOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimTokenCredentialOptions.#ctor(Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimTokenCredentialOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.AllInstances.AuthorityHostGet">
+            <summary>Sets the Shim of TokenCredentialOptions.get_AuthorityHost()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.AllInstances.AuthorityHostSetUri">
+            <summary>Sets the Shim of TokenCredentialOptions.set_AuthorityHost(Uri value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.AuthorityHostGet">
+            <summary>Sets the Shim of TokenCredentialOptions.get_AuthorityHost()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.AuthorityHostSetUri">
+            <summary>Sets the Shim of TokenCredentialOptions.set_AuthorityHost(Uri value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimTokenCredentialOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimTokenCredentialOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimTokenCredentialOptions.Constructor">
+            <summary>Sets the Shim of TokenCredentialOptions.TokenCredentialOptions()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimUsernamePasswordCredential">
+            <summary>Shim type of Azure.Identity.UsernamePasswordCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimUsernamePasswordCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimUsernamePasswordCredential.#ctor(Azure.Identity.UsernamePasswordCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimUsernamePasswordCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.AllInstances.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimUsernamePasswordCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimUsernamePasswordCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.Constructor">
+            <summary>Sets the Shim of UsernamePasswordCredential.UsernamePasswordCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.ConstructorStringStringStringString">
+            <summary>Sets the Shim of UsernamePasswordCredential.UsernamePasswordCredential(String username, String password, String tenantId, String clientId)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.ConstructorStringStringStringStringTokenCredentialOptions">
+            <summary>Sets the Shim of UsernamePasswordCredential.UsernamePasswordCredential(String username, String password, String tenantId, String clientId, TokenCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.GetTokenImplAsyncBooleanTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetTokenImplAsync(Boolean async, TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimUsernamePasswordCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of UsernamePasswordCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCodeCredential">
+            <summary>Shim type of Azure.Identity.VisualStudioCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.#ctor(Azure.Identity.VisualStudioCodeCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.AllInstances.GetTokenImplAsyncTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetTokenImplAsync(TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.AllInstances.GetUserSettingsStringOutStringOut">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetUserSettings(String&amp; tenant, String&amp; environmentName)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.Constructor">
+            <summary>Sets the Shim of VisualStudioCodeCredential.VisualStudioCodeCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.ConstructorVisualStudioCodeCredentialOptions">
+            <summary>Sets the Shim of VisualStudioCodeCredential.VisualStudioCodeCredential(VisualStudioCodeCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.GetAzureCloudInstanceString">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetAzureCloudInstance(String name)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.GetTokenImplAsyncTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetTokenImplAsync(TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.GetUserSettingsStringOutStringOut">
+            <summary>Sets the Shim of VisualStudioCodeCredential.GetUserSettings(String&amp; tenant, String&amp; environmentName)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredential.IsRefreshTokenStringString">
+            <summary>Sets the Shim of VisualStudioCodeCredential.IsRefreshTokenString(String str)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions">
+            <summary>Shim type of Azure.Identity.VisualStudioCodeCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.#ctor(Azure.Identity.VisualStudioCodeCredentialOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.AllInstances.TenantIdGet">
+            <summary>Sets the Shim of VisualStudioCodeCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.AllInstances.TenantIdSetString">
+            <summary>Sets the Shim of VisualStudioCodeCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.Constructor">
+            <summary>Sets the Shim of VisualStudioCodeCredentialOptions.VisualStudioCodeCredentialOptions()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.TenantIdGet">
+            <summary>Sets the Shim of VisualStudioCodeCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCodeCredentialOptions.TenantIdSetString">
+            <summary>Sets the Shim of VisualStudioCodeCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCredential">
+            <summary>Shim type of Azure.Identity.VisualStudioCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredential.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredential.#ctor(Azure.Identity.VisualStudioCredential)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances.GetTokenImplAsyncTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenImplAsync(TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances.GetTokenProviderContentString">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenProviderContent(String tokenProviderPath)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.AllInstances.RunProcessesAsyncListOfProcessStartInfoBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.RunProcessesAsync(List`1&lt;ProcessStartInfo&gt; processStartInfos, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredential.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredential.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.Constructor">
+            <summary>Sets the Shim of VisualStudioCredential.VisualStudioCredential()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.ConstructorVisualStudioCredentialOptions">
+            <summary>Sets the Shim of VisualStudioCredential.VisualStudioCredential(VisualStudioCredentialOptions options)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetStringArrayPropertyValueJsonElementString">
+            <summary>Sets the Shim of VisualStudioCredential.GetStringArrayPropertyValue(JsonElement element, String name)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetTokenImplAsyncTokenRequestContextBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenImplAsync(TokenRequestContext requestContext, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetTokenProviderContentString">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenProviderContent(String tokenProviderPath)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetTokenProviderPath">
+            <summary>Sets the Shim of VisualStudioCredential.GetTokenProviderPath()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredential.RunProcessesAsyncListOfProcessStartInfoBooleanCancellationToken">
+            <summary>Sets the Shim of VisualStudioCredential.RunProcessesAsync(List`1&lt;ProcessStartInfo&gt; processStartInfos, Boolean async, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions">
+            <summary>Shim type of Azure.Identity.VisualStudioCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.#ctor(Azure.Identity.VisualStudioCredentialOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.AllInstances.TenantIdGet">
+            <summary>Sets the Shim of VisualStudioCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.AllInstances.TenantIdSetString">
+            <summary>Sets the Shim of VisualStudioCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.Constructor">
+            <summary>Sets the Shim of VisualStudioCredentialOptions.VisualStudioCredentialOptions()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.TenantIdGet">
+            <summary>Sets the Shim of VisualStudioCredentialOptions.get_TenantId()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.ShimVisualStudioCredentialOptions.TenantIdSetString">
+            <summary>Sets the Shim of VisualStudioCredentialOptions.set_TenantId(String value)</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubAuthenticationFailedException">
+            <summary>Stub type of Azure.Identity.AuthenticationFailedException</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAuthenticationFailedException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAuthenticationFailedException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.GetBaseException">
+            <summary>Sets the Stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the Stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.InitializeStub">
+            <summary>Initializes a new instance of type StubAuthenticationFailedException</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthenticationFailedException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthenticationFailedException.ToString">
+            <summary>Sets the Stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthenticationFailedException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubAuthorizationCodeCredential">
+            <summary>Stub type of Azure.Identity.AuthorizationCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.#ctor(System.String,System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthorizationCodeCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of AuthorizationCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of AuthorizationCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthorizationCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of AuthorizationCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAuthorizationCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of AuthorizationCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAuthorizationCodeCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubAuthorizationCodeCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthorizationCodeCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAuthorizationCodeCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubAzureCliCredential">
+            <summary>Stub type of Azure.Identity.AzureCliCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAzureCliCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAzureCliCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAzureCliCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of AzureCliCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAzureCliCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of AzureCliCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAzureCliCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of AzureCliCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubAzureCliCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of AzureCliCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubAzureCliCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubAzureCliCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAzureCliCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubAzureCliCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubChainedTokenCredential">
+            <summary>Stub type of Azure.Identity.ChainedTokenCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubChainedTokenCredential.#ctor(Azure.Core.TokenCredential[])">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubChainedTokenCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubChainedTokenCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ChainedTokenCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubChainedTokenCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ChainedTokenCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubChainedTokenCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ChainedTokenCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubChainedTokenCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ChainedTokenCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubChainedTokenCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubChainedTokenCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubChainedTokenCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubChainedTokenCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubClientCertificateCredential">
+            <summary>Stub type of Azure.Identity.ClientCertificateCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.#ctor(System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.#ctor(System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientCertificateCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ClientCertificateCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ClientCertificateCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubClientCertificateCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ClientCertificateCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubClientCertificateCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ClientCertificateCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientCertificateCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubClientCertificateCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientCertificateCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientCertificateCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubClientSecretCredential">
+            <summary>Stub type of Azure.Identity.ClientSecretCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.#ctor(System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.#ctor(System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientSecretCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ClientSecretCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ClientSecretCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubClientSecretCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ClientSecretCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubClientSecretCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ClientSecretCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubClientSecretCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubClientSecretCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientSecretCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubClientSecretCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubCredentialUnavailableException">
+            <summary>Stub type of Azure.Identity.CredentialUnavailableException</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubCredentialUnavailableException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubCredentialUnavailableException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.GetBaseException">
+            <summary>Sets the Stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the Stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.InitializeStub">
+            <summary>Initializes a new instance of type StubCredentialUnavailableException</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubCredentialUnavailableException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubCredentialUnavailableException.ToString">
+            <summary>Sets the Stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubCredentialUnavailableException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubDefaultAzureCredential">
+            <summary>Stub type of Azure.Identity.DefaultAzureCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredential.#ctor(Azure.Identity.DefaultAzureCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredential.#ctor(System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of DefaultAzureCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of DefaultAzureCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDefaultAzureCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of DefaultAzureCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDefaultAzureCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of DefaultAzureCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubDefaultAzureCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions">
+            <summary>Stub type of Azure.Identity.DefaultAzureCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.Equals(System.Object)">
+            <summary>Sets the Stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.EqualsObject">
+            <summary>Sets the stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.GetHashCode">
+            <summary>Sets the Stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.GetHashCode01">
+            <summary>Sets the stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubDefaultAzureCredentialOptions</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.ToString">
+            <summary>Sets the Stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDefaultAzureCredentialOptions.ToString01">
+            <summary>Sets the stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubDeviceCodeCredential">
+            <summary>Stub type of Azure.Identity.DeviceCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.#ctor(System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.#ctor(System.Func{Azure.Identity.DeviceCodeInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDeviceCodeCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of DeviceCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of DeviceCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDeviceCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of DeviceCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubDeviceCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of DeviceCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubDeviceCodeCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubDeviceCodeCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDeviceCodeCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubDeviceCodeCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubEnvironmentCredential">
+            <summary>Stub type of Azure.Identity.EnvironmentCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubEnvironmentCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubEnvironmentCredential.#ctor(Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubEnvironmentCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubEnvironmentCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of EnvironmentCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubEnvironmentCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of EnvironmentCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubEnvironmentCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of EnvironmentCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubEnvironmentCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of EnvironmentCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubEnvironmentCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubEnvironmentCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubEnvironmentCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubEnvironmentCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubInteractiveBrowserCredential">
+            <summary>Stub type of Azure.Identity.InteractiveBrowserCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.#ctor(System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubInteractiveBrowserCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of InteractiveBrowserCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of InteractiveBrowserCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubInteractiveBrowserCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of InteractiveBrowserCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubInteractiveBrowserCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of InteractiveBrowserCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubInteractiveBrowserCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubInteractiveBrowserCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubInteractiveBrowserCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubInteractiveBrowserCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubManagedIdentityCredential">
+            <summary>Stub type of Azure.Identity.ManagedIdentityCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubManagedIdentityCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubManagedIdentityCredential.#ctor(System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubManagedIdentityCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubManagedIdentityCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ManagedIdentityCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubManagedIdentityCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of ManagedIdentityCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubManagedIdentityCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ManagedIdentityCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubManagedIdentityCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of ManagedIdentityCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubManagedIdentityCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubManagedIdentityCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubManagedIdentityCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubManagedIdentityCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubSharedTokenCacheCredential">
+            <summary>Stub type of Azure.Identity.SharedTokenCacheCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.#ctor(Azure.Identity.SharedTokenCacheCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.#ctor(System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of SharedTokenCacheCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of SharedTokenCacheCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubSharedTokenCacheCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of SharedTokenCacheCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubSharedTokenCacheCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of SharedTokenCacheCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubSharedTokenCacheCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions">
+            <summary>Stub type of Azure.Identity.SharedTokenCacheCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.Equals(System.Object)">
+            <summary>Sets the Stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.EqualsObject">
+            <summary>Sets the stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.GetHashCode">
+            <summary>Sets the Stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.GetHashCode01">
+            <summary>Sets the stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubSharedTokenCacheCredentialOptions</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.ToString">
+            <summary>Sets the Stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubSharedTokenCacheCredentialOptions.ToString01">
+            <summary>Sets the stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubTokenCredentialOptions">
+            <summary>Stub type of Azure.Identity.TokenCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubTokenCredentialOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubTokenCredentialOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubTokenCredentialOptions.Equals(System.Object)">
+            <summary>Sets the Stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubTokenCredentialOptions.EqualsObject">
+            <summary>Sets the stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubTokenCredentialOptions.GetHashCode">
+            <summary>Sets the Stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubTokenCredentialOptions.GetHashCode01">
+            <summary>Sets the stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubTokenCredentialOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubTokenCredentialOptions</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubTokenCredentialOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubTokenCredentialOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubTokenCredentialOptions.ToString">
+            <summary>Sets the Stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubTokenCredentialOptions.ToString01">
+            <summary>Sets the stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubUsernamePasswordCredential">
+            <summary>Stub type of Azure.Identity.UsernamePasswordCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.#ctor(System.String,System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubUsernamePasswordCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of UsernamePasswordCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of UsernamePasswordCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubUsernamePasswordCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of UsernamePasswordCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubUsernamePasswordCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of UsernamePasswordCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubUsernamePasswordCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubUsernamePasswordCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubUsernamePasswordCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubUsernamePasswordCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubVisualStudioCodeCredential">
+            <summary>Stub type of Azure.Identity.VisualStudioCodeCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredential.#ctor(Azure.Identity.VisualStudioCodeCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of VisualStudioCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of VisualStudioCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCodeCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of VisualStudioCodeCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCodeCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of VisualStudioCodeCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubVisualStudioCodeCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions">
+            <summary>Stub type of Azure.Identity.VisualStudioCodeCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.Equals(System.Object)">
+            <summary>Sets the Stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.EqualsObject">
+            <summary>Sets the stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.GetHashCode">
+            <summary>Sets the Stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.GetHashCode01">
+            <summary>Sets the stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubVisualStudioCodeCredentialOptions</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.ToString">
+            <summary>Sets the Stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCodeCredentialOptions.ToString01">
+            <summary>Sets the stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubVisualStudioCredential">
+            <summary>Stub type of Azure.Identity.VisualStudioCredential</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredential.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredential.#ctor(Azure.Identity.VisualStudioCredentialOptions)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredential.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of VisualStudioCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)">
+            <summary>Sets the Stub of VisualStudioCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCredential.GetTokenAsyncTokenRequestContextCancellationToken">
+            <summary>Sets the stub of VisualStudioCredential.GetTokenAsync(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCredential.GetTokenTokenRequestContextCancellationToken">
+            <summary>Sets the stub of VisualStudioCredential.GetToken(TokenRequestContext requestContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredential.InitializeStub">
+            <summary>Initializes a new instance of type StubVisualStudioCredential</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredential.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredential.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Azure.Identity.Fakes.StubVisualStudioCredentialOptions">
+            <summary>Stub type of Azure.Identity.VisualStudioCredentialOptions</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.Equals(System.Object)">
+            <summary>Sets the Stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.EqualsObject">
+            <summary>Sets the stub of ClientOptions.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.GetHashCode">
+            <summary>Sets the Stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.GetHashCode01">
+            <summary>Sets the stub of ClientOptions.GetHashCode()</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubVisualStudioCredentialOptions</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.ToString">
+            <summary>Sets the Stub of ClientOptions.ToString()</summary>
+        </member>
+        <member name="F:Azure.Identity.Fakes.StubVisualStudioCredentialOptions.ToString01">
+            <summary>Sets the stub of ClientOptions.ToString()</summary>
+        </member>
+    </members>
+</doc>

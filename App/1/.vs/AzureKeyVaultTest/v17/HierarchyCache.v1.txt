@@ -1,0 +1,904 @@
+﻿++Solution 'AzureKeyVaultTest' ‎(6 of 6 projects)
+i:{00000000-0000-0000-0000-000000000000}:AzureKeyVaultTest.sln
+++Base
+i:{00000000-0000-0000-0000-000000000000}:Base
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Properties
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\properties\
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\properties\
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\properties\
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\properties\
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\properties\
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\properties\
+++References
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++KeyValueConfigBuilder.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\keyvalueconfigbuilder.cs
+++KeyValueEnabled.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\keyvalueenabled.cs
+++KeyValueExceptions.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\keyvalueexceptions.cs
+++KeyValueMode.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\keyvaluemode.cs
+++SectionHandler.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\sectionhandler.cs
+++SectionHandlerSection.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\sectionhandlersection.cs
+++Utils.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\utils.cs
+++AssemblyInfo.cs
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:c:\full setup\microsoftconfigurationbuilders-main\microsoftconfigurationbuilders-main\src\base\properties\assemblyinfo.cs
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\properties\assemblyinfo.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\properties\assemblyinfo.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\properties\assemblyinfo.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\properties\assemblyinfo.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\properties\assemblyinfo.cs
+++System
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Configuration
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Xml
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Xml.Linq
+i:{f382fbf8-146d-4968-a199-90d37f9ef9a7}:
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Azure
+i:{00000000-0000-0000-0000-000000000000}:Azure
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Azure.Core
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Azure.Identity
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{00000000-0000-0000-0000-000000000000}:Azure.Identity
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Azure.Security.KeyVault.Secrets
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{00000000-0000-0000-0000-000000000000}:Azure.Security.KeyVault.Secrets
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.Bcl.AsyncInterfaces
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.CSharp
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Buffers
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.ComponentModel.Composition
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Core
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Data
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Data.DataSetExtensions
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Diagnostics.DiagnosticSource
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.IO
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Memory
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Memory.Data
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Net.Http
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Numerics
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Numerics.Vectors
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Runtime
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Runtime.CompilerServices.Unsafe
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Runtime.InteropServices.RuntimeInformation
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security.Cryptography.Algorithms
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security.Cryptography.Encoding
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security.Cryptography.Primitives
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security.Cryptography.X509Certificates
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Text.Encodings.Web
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Text.Json
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Threading.Tasks.Extensions
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.ValueTuple
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++app.config
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\app.config
+++AzureKeyVaultConfigBuilder.cs
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\azurekeyvaultconfigbuilder.cs
+++Class1.cs
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\class1.cs
+++packages.config
+i:{2c836547-8a4a-422f-a6f6-f3b2047627c4}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azure\packages.config
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\packages.config
+++Dependencies
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>212
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>417
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>516
+++Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:analyzers
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:analyzers
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:analyzers
+++Azure.ClientSdk.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\azure.clientsdk.analyzers\0.1.1-dev.20220111.2\analyzers\dotnet\cs\netstandard2.0\azure.clientsdk.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\azure.clientsdk.analyzers\0.1.1-dev.20220111.2\analyzers\dotnet\cs\netstandard2.0\azure.clientsdk.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\azure.clientsdk.analyzers\0.1.1-dev.20220111.2\analyzers\dotnet\cs\netstandard2.0\azure.clientsdk.analyzers.dll
+++Humanizer
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\humanizer.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\humanizer.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\humanizer.dll
+++Microsoft.CodeAnalysis.BannedApiAnalyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.bannedapianalyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.bannedapianalyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.bannedapianalyzers.dll
+++Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.bannedapianalyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.bannedapianalyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.bannedapianalyzers.dll
+++Microsoft.CodeAnalysis.VersionCheckAnalyzer
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\3.3.1\analyzers\dotnet\microsoft.codeanalysis.versioncheckanalyzer.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\3.3.1\analyzers\dotnet\microsoft.codeanalysis.versioncheckanalyzer.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\3.3.1\analyzers\dotnet\microsoft.codeanalysis.versioncheckanalyzer.dll
+++Microsoft.CodeQuality.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.analyzers.dll
+++Microsoft.CodeQuality.CSharp.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.csharp.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.csharp.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.codequality.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.codequality.csharp.analyzers.dll
+++Microsoft.NetCore.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.analyzers.dll
+++Microsoft.NetCore.CSharp.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.csharp.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.csharp.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.netcore.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netcore.csharp.analyzers.dll
+++Microsoft.NetFramework.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.analyzers.dll
+++Microsoft.NetFramework.CSharp.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.csharp.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.csharp.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\microsoft.netframework.analyzers\3.3.1\analyzers\dotnet\cs\microsoft.netframework.csharp.analyzers.dll
+++StyleCop.Analyzers
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.dll
+++StyleCop.Analyzers.CodeFixes
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.codefixes.dll
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.codefixes.dll
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\users\ggovindaraj\.nuget\packages\stylecop.analyzers.unstable\1.2.0.333\analyzers\dotnet\cs\stylecop.analyzers.codefixes.dll
+++Packages
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:packages
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:packages
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:packages
+++Azure.ClientSdk.Analyzers (0.1.1-dev.20220111.2)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>238
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>448
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>546
+++Azure.Core (1.22.0)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>249
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>456
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>554
+++Microsoft.Azure.AutoRest.CSharp (3.0.0-beta.20220207.1)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>243
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>451
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>549
+++Microsoft.CodeAnalysis.BannedApiAnalyzers (3.3.2)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>245
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>453
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>551
+++Microsoft.CodeAnalysis.FxCopAnalyzers (3.3.1)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>237
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>447
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>545
+++Microsoft.DotNet.ApiCompat (5.0.0-beta.20467.1)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>251
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>458
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>556
+++Microsoft.DotNet.GenAPI (5.0.0-beta.19552.1)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>244
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>452
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>550
+++Microsoft.Identity.Client (4.39.0)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>242
+++Microsoft.Identity.Client.Extensions.Msal (2.19.3)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>240
+++Microsoft.SourceLink.GitHub (1.1.1)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>235
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>445
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>543
+++NETStandard.Library (2.0.3)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>241
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>450
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>548
+++SauceControl.InheritDoc (1.2.0)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>236
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>446
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>544
+++StyleCop.Analyzers (1.2.0-beta.333)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>250
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>457
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>555
+++System.Memory (4.5.4)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>239
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>449
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>547
+++System.Security.Cryptography.ProtectedData (4.7.0)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>246
+++System.Text.Json (4.7.2)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>247
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>454
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>552
+++System.Threading.Tasks.Extensions (4.5.4)
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:>248
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:>455
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:>553
+++Shared
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\shared\
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\shared\
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\shared\
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\shared\
+++AbstractAcquireTokenParameterBuilderExtensions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\abstractacquiretokenparameterbuilderextensions.cs
+++AppServiceV2017ManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\appservicev2017managedidentitysource.cs
+++AppServiceV2019ManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\appservicev2019managedidentitysource.cs
+++AsyncLockWithValue.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\asynclockwithvalue.cs
+++AuthenticationAccount.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authenticationaccount.cs
+++AuthenticationFailedException.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authenticationfailedexception.cs
+++AuthenticationRecord.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authenticationrecord.cs
+++AuthenticationRequiredException.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authenticationrequiredexception.cs
+++AuthorizationCodeCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authorizationcodecredential.cs
+++AuthorizationCodeCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\authorizationcodecredentialoptions.cs
+++AzureApplicationCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureapplicationcredential.cs
+++AzureApplicationCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureapplicationcredentialoptions.cs
+++AzureArcManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azurearcmanagedidentitysource.cs
+++AzureAuthorityHosts.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureauthorityhosts.cs
+++AzureCliCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureclicredential.cs
+++AzureCliCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureclicredentialoptions.cs
+++azureicon.png
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\eng\images\azureicon.png
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\eng\images\azureicon.png
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\eng\images\azureicon.png
+++AzureIdentityEventSource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azureidentityeventsource.cs
+++AzurePowerShellCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azurepowershellcredential.cs
+++AzurePowerShellCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\azurepowershellcredentialoptions.cs
+++ChainedTokenCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\chainedtokencredential.cs
+++CHANGELOG.md
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\changelog.md
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\changelog.md
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\changelog.md
+++ClientAssertionCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientassertioncredential.cs
+++ClientAssertionCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientassertioncredentialoptions.cs
+++ClientCertificateCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientcertificatecredential.cs
+++ClientCertificateCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientcertificatecredentialoptions.cs
+++ClientSecretCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientsecretcredential.cs
+++ClientSecretCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\clientsecretcredentialoptions.cs
+++CloudShellManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\cloudshellmanagedidentitysource.cs
+++Constants.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\constants.cs
+++CredentialDiagnosticScope.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\credentialdiagnosticscope.cs
+++CredentialPipeline.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\credentialpipeline.cs
+++CredentialUnavailableException.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\credentialunavailableexception.cs
+++DefaultAzureCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\defaultazurecredential.cs
+++DefaultAzureCredentialFactory.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\defaultazurecredentialfactory.cs
+++DefaultAzureCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\defaultazurecredentialoptions.cs
+++DeviceCodeCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\devicecodecredential.cs
+++DeviceCodeCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\devicecodecredentialoptions.cs
+++DeviceCodeInfo.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\devicecodeinfo.cs
+++EnvironmentCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\environmentcredential.cs
+++EnvironmentVariables.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\environmentvariables.cs
+++FileSystemService.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\filesystemservice.cs
+++GlobalSuppressions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\globalsuppressions.cs
+++HttpPipelineClientFactory.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\httppipelineclientfactory.cs
+++IdentityCompatSwitches.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\identitycompatswitches.cs
+++IdentityModelFactory.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\identitymodelfactory.cs
+++IFileSystemService.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\ifilesystemservice.cs
+++ImdsManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\imdsmanagedidentitysource.cs
+++InMemoryTokenCacheOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\inmemorytokencacheoptions.cs
+++InteractiveBrowserCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\interactivebrowsercredential.cs
+++InteractiveBrowserCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\interactivebrowsercredentialoptions.cs
+++IProcess.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\iprocess.cs
+++IProcessService.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\iprocessservice.cs
+++IScopeHandler.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\iscopehandler.cs
+++ITokenCacheOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\itokencacheoptions.cs
+++IVisualStudioCodeAdapter.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\ivisualstudiocodeadapter.cs
+++IX509Certificate2Provider.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\ix509certificate2provider.cs
+++LinuxNativeMethods.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\linuxnativemethods.cs
+++LinuxVisualStudioCodeAdapter.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\linuxvisualstudiocodeadapter.cs
+++MacosNativeMethods.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\macosnativemethods.cs
+++MacosVisualStudioCodeAdapter.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\macosvisualstudiocodeadapter.cs
+++ManagedIdentityClient.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\managedidentityclient.cs
+++ManagedIdentityClientOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\managedidentityclientoptions.cs
+++ManagedIdentityCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\managedidentitycredential.cs
+++ManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\managedidentitysource.cs
+++MsalCacheHelperWrapper.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\msalcachehelperwrapper.cs
+++MsalCacheReader.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\msalcachereader.cs
+++MsalClientBase.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\msalclientbase.cs
+++MsalConfidentialClient.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\msalconfidentialclient.cs
+++MsalPublicClient.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\msalpublicclient.cs
+++OnBehalfOfCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\onbehalfofcredential.cs
+++OnBehalfOfCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\onbehalfofcredentialoptions.cs
+++ProcessRunner.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\processrunner.cs
+++ProcessService.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\processservice.cs
+++README.md
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\readme.md
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\readme.md
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\readme.md
+++RegionalAuthority.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\regionalauthority.cs
+++ScopeGroupHandler.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\scopegrouphandler.cs
+++ScopeUtilities.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\scopeutilities.cs
+++SentinelFileLock.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\sentinelfilelock.cs
+++ServiceFabricManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\servicefabricmanagedidentitysource.cs
+++SharedTokenCacheCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\sharedtokencachecredential.cs
+++SharedTokenCacheCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\sharedtokencachecredentialoptions.cs
+++StringExtensions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\stringextensions.cs
+++TenantIdResolver.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tenantidresolver.cs
+++TokenCache.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencache.cs
+++TokenCacheData.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencachedata.cs
+++TokenCachePersistenceOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencachepersistenceoptions.cs
+++TokenCacheRefreshArgs.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencacherefreshargs.cs
+++TokenCacheUpdatedArgs.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencacheupdatedargs.cs
+++TokenCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokencredentialoptions.cs
+++TokenExchangeManagedIdentitySource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\tokenexchangemanagedidentitysource.cs
+++UnsafeTokenCacheOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\unsafetokencacheoptions.cs
+++UsernamePasswordCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\usernamepasswordcredential.cs
+++UsernamePasswordCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\usernamepasswordcredentialoptions.cs
+++Validations.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\validations.cs
+++VisualStudioCodeCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\visualstudiocodecredential.cs
+++VisualStudioCodeCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\visualstudiocodecredentialoptions.cs
+++VisualStudioCredential.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\visualstudiocredential.cs
+++VisualStudioCredentialOptions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\visualstudiocredentialoptions.cs
+++WindowsNativeMethods.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\windowsnativemethods.cs
+++WindowsVisualStudioCodeAdapter.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\windowsvisualstudiocodeadapter.cs
+++X509Certificate2FromFileProvider.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\x509certificate2fromfileprovider.cs
+++X509Certificate2FromObjectProvider.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\identity\azure.identity\src\x509certificate2fromobjectprovider.cs
+++AppContextSwitchHelper.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\appcontextswitchhelper.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\appcontextswitchhelper.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\appcontextswitchhelper.cs
+++Argument.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\argument.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\argument.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\argument.cs
+++ArrayBufferWriter.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\arraybufferwriter.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\arraybufferwriter.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\arraybufferwriter.cs
+++AzureEventSource.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\azureeventsource.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\azureeventsource.cs
+++AzureResourceProviderNamespaceAttribute.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\azureresourceprovidernamespaceattribute.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\azureresourceprovidernamespaceattribute.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\azureresourceprovidernamespaceattribute.cs
+++Base64Url.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\base64url.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\base64url.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\base64url.cs
+++ClientDiagnostics.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\clientdiagnostics.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\clientdiagnostics.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\clientdiagnostics.cs
+++ContentTypeUtilities.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\contenttypeutilities.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\contenttypeutilities.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\contenttypeutilities.cs
+++DiagnosticScope.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscope.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscope.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscope.cs
+++DiagnosticScopeFactory.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscopefactory.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscopefactory.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\diagnosticscopefactory.cs
+++HttpMessageSanitizer.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\httpmessagesanitizer.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\httpmessagesanitizer.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\httpmessagesanitizer.cs
+++HttpPipelineMessageHandler.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\httppipelinemessagehandler.cs
+++LightweightPkcs8Decoder.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\lightweightpkcs8decoder.cs
+++PemReader.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\pemreader.cs
+++TaskExtensions.cs
+i:{d7637593-3845-4892-ad92-13aa4e70eaf5}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\taskextensions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\taskextensions.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\taskextensions.cs
+++Azure.Security.KeyVault.Keys
+i:{00000000-0000-0000-0000-000000000000}:Azure.Security.KeyVault.Keys
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Projects
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:projects
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:projects
+++Azure.Security.KeyVault.Shared
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.shared\src\azure.security.keyvault.shared.projitems
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.shared\src\azure.security.keyvault.shared.projitems
+++Cryptography
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\
+++CreateEcKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\createeckeyoptions.cs
+++CreateKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\createkeyoptions.cs
+++CreateOctKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\createoctkeyoptions.cs
+++CreateRsaKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\creatersakeyoptions.cs
+++DeletedKey.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\deletedkey.cs
+++DeleteKeyOperation.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\deletekeyoperation.cs
+++GetRandomBytesRequest.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\getrandombytesrequest.cs
+++ImportKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\importkeyoptions.cs
+++JsonWebKey.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\jsonwebkey.cs
+++JsonWebKeyConverter.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\jsonwebkeyconverter.cs
+++KeyAttributes.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyattributes.cs
+++KeyBackup.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keybackup.cs
+++KeyClient.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyclient.cs
+++KeyClientBuilderExtensions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyclientbuilderextensions.cs
+++KeyClientOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyclientoptions.cs
+++KeyCurveName.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keycurvename.cs
+++KeyExportEncryptionAlgorithm.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyexportencryptionalgorithm.cs
+++KeyModelFactory.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keymodelfactory.cs
+++KeyOperation.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyoperation.cs
+++KeyProperties.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyproperties.cs
+++KeyReleasePolicy.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyreleasepolicy.cs
+++KeyRequestParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyrequestparameters.cs
+++KeyRotationLifetimeAction.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyrotationlifetimeaction.cs
+++KeyRotationPolicy.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyrotationpolicy.cs
+++KeyRotationPolicyAction.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyrotationpolicyaction.cs
+++KeysEventSource.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyseventsource.cs
+++KeyType.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keytype.cs
+++KeyVaultKey.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyvaultkey.cs
+++KeyVaultKeyIdentifier.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyvaultkeyidentifier.cs
+++KeyVaultPipeline.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\keyvaultpipeline.cs
+++RandomBytes.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\randombytes.cs
+++RecoverDeletedKeyOperation.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\recoverdeletedkeyoperation.cs
+++ReleaseKeyOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\releasekeyoptions.cs
+++ReleaseKeyResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\releasekeyresult.cs
+++AesCbc.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\aescbc.cs
+++AesCryptographyProvider.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\aescryptographyprovider.cs
+++AesKw.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\aeskw.cs
+++ByteExtensions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\byteextensions.cs
+++Crypto.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\crypto.cs
+++CryptographyClient.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\cryptographyclient.cs
+++CryptographyClientOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\cryptographyclientoptions.cs
+++CryptographyModelFactory.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\cryptographymodelfactory.cs
+++DecryptParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\decryptparameters.cs
+++DecryptResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\decryptresult.cs
+++EcCryptographyProvider.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\eccryptographyprovider.cs
+++EncryptionAlgorithm.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\encryptionalgorithm.cs
+++EncryptParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\encryptparameters.cs
+++EncryptResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\encryptresult.cs
+++ICryptographyProvider.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\icryptographyprovider.cs
+++KeyResolver.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\keyresolver.cs
+++KeySignParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\keysignparameters.cs
+++KeyVerifyParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\keyverifyparameters.cs
+++KeyWrapAlgorithm.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\keywrapalgorithm.cs
+++KeyWrapParameters.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\keywrapparameters.cs
+++LocalCryptographyClientOptions.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\localcryptographyclientoptions.cs
+++LocalCryptographyProvider.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\localcryptographyprovider.cs
+++LocalCryptographyProviderFactory.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\localcryptographyproviderfactory.cs
+++RemoteCryptographyClient.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\remotecryptographyclient.cs
+++RsaCryptographyProvider.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\rsacryptographyprovider.cs
+++SecretKey.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\secretkey.cs
+++SignatureAlgorithm.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\signaturealgorithm.cs
+++SignResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\signresult.cs
+++UnwrapResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\unwrapresult.cs
+++VerifyResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\verifyresult.cs
+++WrapResult.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.keys\src\cryptography\wrapresult.cs
+++AuthorizationChallengeParser.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\authorizationchallengeparser.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\authorizationchallengeparser.cs
+++HashCodeBuilder.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\hashcodebuilder.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\hashcodebuilder.cs
+++OperationHelpers.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationhelpers.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationhelpers.cs
+++OperationInternal.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationinternal.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationinternal.cs
+++OperationInternalBase.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationinternalbase.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\operationinternalbase.cs
+++PageResponseEnumerator.cs
+i:{0b0f3901-6840-4070-8746-97f5ec89a5ac}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\pageresponseenumerator.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\core\azure.core\src\shared\pageresponseenumerator.cs
+++DeletedSecret.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\deletedsecret.cs
+++DeleteSecretOperation.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\deletesecretoperation.cs
+++KeyVaultSecret.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\keyvaultsecret.cs
+++KeyVaultSecretIdentifier.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\keyvaultsecretidentifier.cs
+++RecoverDeletedSecretOperation.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\recoverdeletedsecretoperation.cs
+++SecretAttributes.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretattributes.cs
+++SecretBackup.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretbackup.cs
+++SecretClient.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretclient.cs
+++SecretClientBuilderExtensions.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretclientbuilderextensions.cs
+++SecretClientOptions.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretclientoptions.cs
+++SecretModelFactory.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretmodelfactory.cs
+++SecretProperties.cs
+i:{189b715b-09ef-49e9-a929-5e68b4e06ce0}:c:\full setup\azure-sdk-for-net-main\azure-sdk-for-net-main\sdk\keyvault\azure.security.keyvault.secrets\src\secretproperties.cs
+++AzureKeyVaultTest
+i:{00000000-0000-0000-0000-000000000000}:AzureKeyVaultTest
+++Connected Services
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\connected services\
+++Antlr3.Runtime
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.Identity.Client
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.Identity.Client.Extensions.Msal
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Microsoft.Web.Infrastructure
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++Newtonsoft.Json
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.ComponentModel.DataAnnotations
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Drawing
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.EnterpriseServices
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.IdentityModel
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Net.Http.WebRequest
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Security.Cryptography.ProtectedData
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Abstractions
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.ApplicationServices
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.DynamicData
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Entity
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Extensions
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Helpers
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Mvc
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Optimization
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Razor
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Routing
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.Services
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.WebPages
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.WebPages.Deployment
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Web.WebPages.Razor
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++System.Windows.Forms
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++WebGrease
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:
+++App_Data
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\app_data\
+++App_Start
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\app_start\
+++Content
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\
+++Controllers
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\controllers\
+++HomeController.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\controllers\homecontroller.cs
+++fonts
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\
+++Models
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\models\
+++Scripts
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\
+++Views
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\
+++favicon.ico
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\favicon.ico
+++Global.asax
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\global.asax
+++Web.config
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\web.config
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\web.config
+++BundleConfig.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\app_start\routeconfig.cs
+++bootstrap-theme.css
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap-theme.min.css.map
+++bootstrap.css
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap.css
+++bootstrap.css.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap.css.map
+++bootstrap.min.css
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap.min.css
+++bootstrap.min.css.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\bootstrap.min.css.map
+++Site.css
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\content\site.css
+++glyphicons-halflings-regular.eot
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\fonts\glyphicons-halflings-regular.woff2
+++bootstrap.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\bootstrap.js
+++bootstrap.min.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\bootstrap.min.js
+++jquery-3.4.1.intellisense.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery-3.4.1.slim.min.map
+++jquery.validate-vsdoc.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery.validate-vsdoc.js
+++jquery.validate.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery.validate.js
+++jquery.validate.min.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery.validate.min.js
+++jquery.validate.unobtrusive.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\jquery.validate.unobtrusive.min.js
+++modernizr-2.8.3.js
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\scripts\modernizr-2.8.3.js
+++Home
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\home\
+++_ViewStart.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\_viewstart.cshtml
+++Global.asax.cs
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\global.asax.cs
+++Web.Debug.config
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\web.debug.config
+++Web.Release.config
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\web.release.config
+++About.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\home\about.cshtml
+++Contact.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\home\contact.cshtml
+++Index.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\home\index.cshtml
+++_Layout.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\shared\_layout.cshtml
+++Error.cshtml
+i:{82a91051-6f6f-482d-828a-69a776e006cd}:c:\full setup\azurekeyvaulttest-master\azurekeyvaulttest-master\azurekeyvaulttest\views\shared\error.cshtml
