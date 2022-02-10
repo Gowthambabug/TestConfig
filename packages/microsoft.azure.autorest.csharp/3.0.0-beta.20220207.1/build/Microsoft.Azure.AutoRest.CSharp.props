@@ -1,0 +1,8 @@
+<Project>
+<ItemGroup>
+<SourceRoot Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\contentFiles\any\netcoreapp3.1\'))" SourceLinkUrl="https://raw.githubusercontent.com/Azure/autorest.csharp/7b745f268dc9280af120e5b165f796d563b1681d/src/assets/*"/>
+</ItemGroup>
+<PropertyGroup>
+<AutoRestCoreVersion>3.7.3</AutoRestCoreVersion>
+</PropertyGroup>
+</Project>

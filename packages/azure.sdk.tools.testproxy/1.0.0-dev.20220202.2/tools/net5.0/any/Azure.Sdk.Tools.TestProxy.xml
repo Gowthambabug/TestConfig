@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Azure.Sdk.Tools.TestProxy</name>
+    </assembly>
+    <members>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.ApplyCondition.#ctor(System.Text.Json.JsonElement)">
+            <summary>
+            This constructor is used to abstract the creation of an ApplyCondition from API input.
+            This is a separate function to allow context-sensitive setting. EG, if setting a condition,
+            one of the trigger properties should be populated! This is a bit immaterial when only dealing with 
+            a single property, but we might as well start this way.
+            </summary>
+            <param name="jsonElement">The contents of "condition" key with the body of a request to /Admin/AddSanitizer or /Admin/AddTransform.</param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Common.HeaderCondition">
+            <summary>
+            A condition that can be used to apply an action based on the presence of a header.
+            </summary>
+        </member>
+        <member name="P:Azure.Sdk.Tools.TestProxy.Common.HeaderCondition.Key">
+            <summary>
+            The header key that must be present for the condition to pass.
+            </summary>
+        </member>
+        <member name="P:Azure.Sdk.Tools.TestProxy.Common.HeaderCondition.ValueRegex">
+            <summary>
+            An optional regex that can be applied to the value of the header.
+            If the header contains multiple values, at least one of the value must match
+            the regex for the condition to pass.
+            </summary>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Common.RecordedTestSanitizer">
+            <summary>
+            The default sanitizer that is always applied. Removes the header "Authorization" and replaces it with the value "Sanitized".
+            </summary>
+        </member>
+        <member name="P:Azure.Sdk.Tools.TestProxy.Common.RecordedTestSanitizer.LegacyConvertJsonDateTokens">
+            This is just a temporary workaround to avoid breaking tests that need to be re-recorded
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.RecordedTestSanitizer.UpdateSanitizedContentLength(Azure.Sdk.Tools.TestProxy.Common.RequestOrResponse)">
+            <summary>
+            Optionally update the Content-Length header if we've sanitized it
+            and the new value is a different length from the original
+            Content-Length header.  We don't add a Content-Length header if it
+            wasn't already present.
+            </summary>
+            <param name="requestOrResponse">The Request or Response message</param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Common.RecordMatcher">
+             <summary>
+             The default matcher. Matches a request against the set of recorded requests during playback by comparing RequestUri, Headers, and Body.
+            
+             Excludes the following headers while comparing: Date, x-ms-date, x-ms-client-request-id, User-Agent, Request-Id, and traceparent.
+             </summary>
+        </member>
+        <member name="F:Azure.Sdk.Tools.TestProxy.Common.RecordMatcher.ExcludeHeaders">
+            <summary>
+            Headers that will be entirely ignored during matching. 
+            </summary>
+        </member>
+        <member name="F:Azure.Sdk.Tools.TestProxy.Common.RecordMatcher.IgnoredHeaders">
+            <summary>
+            Headers whose CONTENT will be ignored during matching, but whose PRESENCE will still be checked for on both request and record sides. 
+            </summary>
+        </member>
+        <member name="F:Azure.Sdk.Tools.TestProxy.Common.RecordMatcher.IgnoredQueryParameters">
+            <summary>
+            Query parameters whose values can change between recording and playback without causing URI matching
+            to fail. The presence or absence of the query parameter itself is still respected in matching.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.ResponseTransform.ApplyTransform(Azure.Sdk.Tools.TestProxy.Common.RecordEntry)">
+            <summary>
+            Base class used to describe transforming a played back response with necessary 
+            changes directly from a request.
+            </summary>
+            <param name="entry">The entry to transform.</param>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.StringSanitizer.ConfirmValidRegex(System.String)">
+            <summary>
+            Quick and easy abstraction for checking regex validity. Passing null explicitly will result in a True return.
+            </summary>
+            <param name="regex">A regular expression.</param>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.StringSanitizer.ReplaceValue(System.String,System.String,System.String)">
+            <summary>
+            General purpose string replacement. Simple abstraction of string.Replace().
+            </summary>
+            <param name="inputValue">The name of the header we're operating against.</param>
+            <param name="targetValue">The substitution or whole new header value, depending on "regex" setting.</param>
+            <param name="replacementValue">The substitution or new header value, depending on the "targetValue" setting.</param>
+            <returns>An updated value of the input string, with replacement operations completed if necessary.</returns>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Common.StringSanitizer.SanitizeValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            General purpose string replacement/subsitution given a set of inputs. Used in many regex substitution sanitizers.
+            </summary>
+            <param name="inputValue">The name of the header we're operating against.</param>
+            <param name="replacementValue">The substitution or whole input value, depending on "regex" setting.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupName is set, a subsitution operation.</param>
+            <param name="groupName">The capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation. 
+            Note that with this implementation, you can refer to a numbered group if you didn't name it, EG: '0'.</param>
+            <returns>An updated value of the input string, with replacement operations completed if necessary.</returns>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Matchers.BodilessMatcher.#ctor">
+            <summary>
+            This matcher adjusts the "match" operation to EXCLUDE the body when matching a request to a recording's entries.
+            </summary>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Matchers.CustomDefaultMatcher">
+            <summary>
+            This matcher exposes the default matcher in a customizable way. Currently this merely includes enabling/disabling body match and adding additional excluded headers. The range of customizability will extend past these initial two.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Matchers.CustomDefaultMatcher.#ctor(System.Boolean,System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            All optional settings are safely defaulted. This means that providing zero additional configuration will produce a sanitizer that is functionally identical to the default.
+            </summary>
+            <param name="compareBodies">Should the body value be compared during lookup operations?</param>
+            <param name="excludedHeaders">A comma separated list of additional headers that should be excluded during matching.</param>
+            <param name="ignoredHeaders">A comma separated list of additional headers that should be ignored during matching.</param>
+            <param name="ignoreQueryOrdering">By default, the test-proxy does not sort query params before matching. Setting true will sort query params alphabetically before comparing URI.</param>
+            <param name="ignoredQueryParameters">A comma separated list of query parameterse that should be ignored during matching.</param>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Matchers.HeaderlessMatcher.#ctor">
+            <summary>
+            This matcher adjusts the "match" operation to ignore header differences when matching a request. Be aware that wholly ignoring headers during matching might incur unexpected issues down the line.
+            </summary>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyKeySanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies regex replacement to the Request and Response bodies contained therein. It ONLY operates on the request/response bodies. Not header or URIs.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyKeySanitizer.#ctor(System.String,System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer offers regex update of a specific JTokenPath. EG: "TableName" within a json response body having its value replaced by
+            whatever substitution is offered. This simply means that if you are attempting to replace a specific key wholesale, this sanitizer will be 
+            simpler than configuring a BodyRegexSanitizer that has to match against the full "KeyName": "Value" that is part of the json structure. Further reading is available
+            <a href="https://www.newtonsoft.com/json/help/html/SelectToken.htm#SelectTokenJSONPath">here.</a> If the body is NOT a JSON object, this sanitizer will NOT be applied.
+            </summary>
+            <param name="jsonPath">The SelectToken path (which could possibly match multiple entries) that will be used to select JTokens for value replacement.</param>
+            <param name="value">The substitution value.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupForReplace is set, a subsitution operation. Defaults to replacing the entire string.</param>
+            <param name="groupForReplace">The regex capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains various configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyRegexSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies regex replacement to the Request and Response bodies contained therein. It ONLY operates on the request/response bodies. Not header or URIs.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyRegexSanitizer.#ctor(System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer offers regex replace within a returned body. Specifically, this means regex applying to the raw JSON. If you are attempting to simply 
+            replace a specific key, the BodyKeySanitizer is probably the way to go. Regardless, there are examples present in SanitizerTests.cs.
+            to 
+            </summary>
+            <param name="value">The substitution value.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupForReplace is set, a subsitution operation.</param>
+            <param name="groupForReplace">The capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyStringSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies value replacement to the Request and Response bodies contained therein. It ONLY operates on the request/response bodies. Not header or URIs.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.BodyStringSanitizer.#ctor(System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer offers regex replace within a returned body. Specifically, this means regex applying to the raw JSON. If you are attempting to simply 
+            replace a specific key, the BodyKeySanitizer is probably the way to go. Regardless, there are examples present in SanitizerTests.cs.
+            </summary>
+            <param name="target">A target string. This could contain special regex characters like "?()+*" but they will be treated as a literal.</param>
+            <param name="value">The substitution value.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.ContinuationSanitizer">
+            <summary>
+            Used to sanitize "session" variables. A "session" variable is one that is returned as a result of Response A, then used as INPUT of Response B. 
+            
+            The value inserted defaults to a new guid if one is not provided. This sanitizer applies at the session level, and looks at the HEADERS of the request/response pairs.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.ContinuationSanitizer.#ctor(System.String,System.String,System.String)">
+            <summary>
+            This sanitizer is applied at the session level, and is used to anonymize private keys in response/request pairs.
+            
+            For instance, request/response pair A has a RESPONSE that contains a "sessionId" header whos value must be present in the REQUEST of the next request/response pair B.
+            
+            This sanitizer supports "all further requests get this the value of this first key" as well as as the more standard "response value gets used in next request" that is described 
+            in the scenario before. 
+            
+            Defaults to maintaining same key for rest of recording.
+            </summary>
+            <param name="key">The name of the header whos value will be replaced from response -> next request.</param>
+            <param name="method">The method by which the value of the targeted key will be replaced. Currently only supports generating a new guid for the value replacement..</param>
+            <param name="resetAfterFirst">Do we need multiple pairs replaced? Or do we want to stop after the first set.</param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.GeneralRegexSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies itself to the Request and Response bodies contained therein. This "general" sanitizer applies the configured regex replacement
+            to headers, body, and URI. 
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.GeneralRegexSanitizer.#ctor(System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer offers a general regex replace across request/response Body, Headers, and URI. For the body, this means regex applying to the raw JSON. 
+            to 
+            </summary>
+            <param name="value">The substitution value.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupForReplace is set, a subsitution operation.</param>
+            <param name="groupForReplace">The capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.GeneralStringSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies itself to the Request and Response bodies contained therein. This "general" sanitizer applies the configured string value replacement
+            to headers, body, and URI. 
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.GeneralStringSanitizer.#ctor(System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer offers a value replace across request/response Body, Headers, and URI. For the body, this means a string replacement applied directly to the raw JSON. 
+            </summary>
+            <param name="value">The substitution value.</param>
+            <param name="target">A target string. This could contain special regex characters like "?()+*" but they will be treated as a literal.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.HeaderRegexSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies itself to the headers contained therein. This sanitizer ONLY applies to the request/response headers, 
+            body and URI are left untouched.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.HeaderRegexSanitizer.#ctor(System.String,System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Can be used for multiple purposes:
+                1) To replace a key with a specific value, do not set "regex" value.
+                2) To do a simple regex replace operation, define arguments "key", "value", and "regex"
+                3) To do a targeted substitution of a specific group, define all arguments "key", "value", and "regex"
+            </summary>
+            <param name="key">The name of the header we're operating against.</param>
+            <param name="value">The substitution or whole new header value, depending on "regex" setting.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupForReplace is set, a subsitution operation.</param>
+            <param name="groupForReplace">The capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.HeaderStringSanitizer">
+            <summary>
+            This sanitizer operates on a RecordSession entry and applies value replacement to the headers contained therein. This sanitizer ONLY applies to the request/response headers, 
+            body and URI are left untouched.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.HeaderStringSanitizer.#ctor(System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Applies a simple value replacement for a target header key. If it does not exist, no actions will be taken.
+            </summary>
+            <param name="key">The name of the header we're operating against.</param>
+            <param name="target">A target string. This could contain special regex characters like "?()+*" but they will be treated as a literal.</param>
+            <param name="value">The substitution value.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.OAuthResponseSanitizer">
+            <summary>
+            This sanitizer applies at the session level, just before saving a recording to disk.
+            
+            It cleans out all request/response pairs that match an oauth regex in their URI.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.OAuthResponseSanitizer.#ctor">
+            <summary>
+            There are no customizations available for this sanitizer.
+            </summary>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.RemoveHeaderSanitizer">
+            <summary>
+            A simple sanitizer that should be used to clean out one or multiple headers by their key. As could be determined by the description, this sanitizer only applies to the 
+            request/response headers.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.RemoveHeaderSanitizer.#ctor(System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Removes headers from before saving a recording.
+            </summary>
+            <param name="headersForRemoval">A comma separated list. Should look like "Location, Transfer-Encoding" or something along those lines! Don't worry about whitespace
+            between the commas separating each key. They will be ignored.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.UriRegexSanitizer">
+            <summary>
+            General use sanitizer for cleaning URIs via regex.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.UriRegexSanitizer.#ctor(System.String,System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Runs a regex replace on the member of your choice.
+            </summary>
+            <param name="value">The substitution value.</param>
+            <param name="regex">A regex. Can be defined as a simple regex replace OR if groupForReplace is set, a subsitution operation.</param>
+            <param name="groupForReplace">The capture group that needs to be operated upon. Do not set if you're invoking a simple replacement operation.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.UriStringSanitizer">
+            <summary>
+            General use sanitizer for cleaning URIs via straightforward string replacement.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.UriStringSanitizer.#ctor(System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Runs a simple string replacement against the request/response URIs.
+            </summary>
+            <param name="value">The substitution value.</param>
+            <param name="target">A target string. This could contain special regex characters like "?()+*" but they will be treated as a literal.</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Sanitizers.UriSubscriptionIdSanitizer">
+            <summary>
+            This sanitizer relies on UriRegexSanitizer to replace real subscriptionIds within a URI w/ a default or configured fake value. This sanitizer ONLY affects
+            the URI of a request/response pair.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Sanitizers.UriSubscriptionIdSanitizer.#ctor(System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            This sanitizer is targeted using the regex "/subscriptions/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})". This is not a setting
+            that can be changed for this sanitizer. For full regex support, take a look at UriRegexSanitizer. You CAN modify the value
+            that the subscriptionId is replaced WITH however.
+            </summary>
+            <param name="value">The fake subscriptionId that will be placed where the real one is in the real request. The default replacement value is "00000000-0000-0000-0000-000000000000".</param>
+            <param name="condition">
+            A condition that dictates when this sanitizer applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys. 
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'. Defaults to "apply always."
+            </param>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Startup.Main(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            test-proxy
+            </summary>
+            <param name="insecure">Allow untrusted SSL certs from upstream server</param>
+            <param name="storageLocation">The path to the target local git repo. If not provided as an argument, Environment variable TEST_PROXY_FOLDER will be consumed. Lacking both, the current working directory will be utilized.</param>
+            <param name="version">Flag. Invoke to get the version of the tool.</param>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Transforms.ApiVersionTransform.ApplyTransform(Azure.Sdk.Tools.TestProxy.Common.RecordEntry)">
+            <summary>
+            This transform applies during playback mode. It copies the header "api-version" of the request
+            onto the response before sending the response back to the client.
+            </summary>
+            <param name="entry">The entry to transform.</param>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Transforms.ClientIdTransform">
+            <summary>
+            This transform applies during playback mode. It copies the header "x-ms-client-id" of the request
+            onto the response before returning to the client.
+            </summary>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Transforms.HeaderTransform">
+            <summary>
+            Sets a header in a response.
+            </summary>
+        </member>
+        <member name="M:Azure.Sdk.Tools.TestProxy.Transforms.HeaderTransform.#ctor(System.String,System.String,Azure.Sdk.Tools.TestProxy.Common.ApplyCondition)">
+            <summary>
+            Constructs a new HeaderTransform instance.
+            </summary>
+            <param name="key">The header key for the header.</param>
+            <param name="value">The value for the header.</param>
+            <param name="condition">
+            A condition that dictates when this transform applies to a request/response pair. The content of this key should be a JSON object that contains configuration keys.
+            Currently, that only includes the key "uriRegex". This translates to an object that looks like '{ "uriRegex": "when this regex matches, apply the sanitizer" }'.
+            Defaults to "apply always."
+            </param>
+            <remarks>
+            By default, the header will be set in the response whether or not the header key is already
+            present.
+            If the header should only be set if the header key is already present in the response,
+            include a Condition populated with a ResponseHeader in the HeaderTransform JSON.
+            </remarks>
+        </member>
+        <member name="T:Azure.Sdk.Tools.TestProxy.Transforms.StorageRequestIdTransform">
+            <summary>
+            Storage requests send a header "x-ms-client-request-id" with every request.
+            The response from the service contains a header that MUST MATCH this value.
+            
+            This transform implements the above behavior during playback.
+            </summary>
+        </member>
+    </members>
+</doc>

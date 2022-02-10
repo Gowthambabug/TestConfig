@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.DotNet.GenAPI</id>
+    <version>5.0.0-beta.19552.1</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <projectUrl>https://github.com/dotnet/arcade</projectUrl>
+    <description>Package Description</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <serviceable>true</serviceable>
+    <packageTypes>
+      <packageType name="MSBuildSdk" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/dotnet/arcade" commit="bfa46e9e624cc148bd5c6b7af63f52f6e1d48c8d" />
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Collections.NonGeneric" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Diagnostics.TextWriterTraceListener" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Diagnostics.TraceSource" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.IO.FileSystem" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.IO.FileSystem.Primitives" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

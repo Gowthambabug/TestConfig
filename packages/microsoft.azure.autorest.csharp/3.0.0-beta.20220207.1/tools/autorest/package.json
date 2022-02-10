@@ -1,0 +1,86 @@
+{
+  "name": "autorest",
+  "version": "3.5.1",
+  "description": "The AutoRest tool generates client libraries for accessing RESTful web services. Input to AutoRest is an OpenAPI spec that describes the REST API.",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azure/autorest"
+  },
+  "homepage": "https://github.com/Azure/autorest",
+  "readme": "https://github.com/Azure/autorest/blob/main/readme.md",
+  "keywords": [
+    "autorest",
+    "rest",
+    "swagger"
+  ],
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azure/autorest/issues"
+  },
+  "main": "./dist/exports.js",
+  "bin": {
+    "autorest": "./entrypoints/app.js"
+  },
+  "scripts": {
+    "start": "node ./dist/src/app.js",
+    "test": "jest --coverage=false --watch",
+    "test:unit:ci": "jest --ci",
+    "test:e2e": "jest --forceExit --runInBand --config ./jest.e2e.config.js",
+    "test:e2e:ci": "jest --ci --forceExit --runInBand --config ./jest.e2e.config.js",
+    "test:ci": "npm run test:unit:ci && npm run test:e2e:ci",
+    "build": "tsc -p tsconfig.build.json",
+    "build:prod": "webpack",
+    "watch": "tsc -p tsconfig.build.json --watch",
+    "lint:fix": "eslint ./src --fix --ext .ts",
+    "lint": "eslint ./src --ext .ts --max-warnings=0",
+    "preinstall": "node ./.scripts/preinstall-check",
+    "prepack": "npm run clean && npm run build:prod",
+    "clean": "rimraf ./dist"
+  },
+  "typings": "./dist/exports.d.ts",
+  "devDependencies": {
+    "@autorest/configuration": "~1.8.0",
+    "@autorest/core": "~3.7.0",
+    "@autorest/common": "~1.4.0",
+    "@azure-tools/async-io": "~3.0.0",
+    "@azure-tools/extension": "~3.4.0",
+    "@azure-tools/tasks": "~3.0.0",
+    "@azure-tools/uri": "~3.1.1",
+    "@types/commonmark": "^0.27.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "~14.14.20",
+    "@types/semver": "5.5.0",
+    "@types/source-map-support": "^0.5.3",
+    "@types/webpack": "~4.41.26",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "chalk": "^4.1.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "cpy-cli": "~2.0.0",
+    "eslint-plugin-jest": "~24.3.2",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-prettier": "~3.4.0",
+    "eslint-plugin-unicorn": "~33.0.1",
+    "eslint-plugin-import": "~2.24.2",
+    "eslint": "^7.17.0",
+    "jest": "^27.0.4",
+    "jsonpath": "1.0.0",
+    "mkdirp": "~0.5.1",
+    "prettier": "~2.3.1",
+    "rimraf": "^3.0.2",
+    "safe-buffer": "5.2.0",
+    "semver": "^5.5.1",
+    "source-map-support": "^0.5.19",
+    "source-map": "0.7.3",
+    "ts-jest": "^27.0.3",
+    "ts-loader": "~9.2.3",
+    "typescript": "~4.4.2",
+    "untildify": "^4.0.0",
+    "webpack-cli": "~4.7.2",
+    "webpack": "~5.40.0"
+  }
+}

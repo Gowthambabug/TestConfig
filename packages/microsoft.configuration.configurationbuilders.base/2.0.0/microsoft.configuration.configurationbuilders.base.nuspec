@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Configuration.ConfigurationBuilders.Base</id>
+    <version>2.0.0</version>
+    <title>Microsoft Configuration Builders - Base</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/aspnet/MicrosoftConfigurationBuilders</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <description>In .Net 4.7.1, the configuration system allows applications to use ConfigurationBuilders to build up and modify configuration at runtime when it is loaded. This package provides a base framework to ease development of basic key/value configuration builders.</description>
+    <summary>A base framework for basic key/value Configuration Builders for the .Net Framework.</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>Microsoft Configuration Builders</tags>
+  </metadata>
+</package>

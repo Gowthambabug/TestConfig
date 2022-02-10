@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Azure.ClientSdk.Analyzers</id>
+    <version>0.1.1-dev.20220111.2</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>pkgicon.png</icon>
+    <projectUrl>https://github.com/Azure/azure-sdk-tools</projectUrl>
+    <description>Package Description</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <repository url="https://github.com/Azure/azure-sdk-tools" />
+  </metadata>
+</package>
